@@ -196,7 +196,7 @@
             Update: =DataCardValue14.SelectedDate
             Width: =640
             X: =0
-            Y: =2
+            Y: =5
             ZIndex: =6
 
             DataCardKey14 As label:
@@ -266,7 +266,7 @@
             Update: =Value(DataCardValue15.Text)
             Width: =640
             X: =0
-            Y: =3
+            Y: =6
             ZIndex: =6
 
             DataCardKey15 As label:
@@ -339,7 +339,7 @@
             Update: =DataCardValue16.Text
             Width: =640
             X: =0
-            Y: =4
+            Y: =2
             ZIndex: =6
 
             DataCardKey16 As label:
@@ -411,7 +411,7 @@
             Update: =DataCardValue17.SelectedDate
             Width: =640
             X: =0
-            Y: =5
+            Y: =4
             ZIndex: =6
 
             DataCardKey17 As label:
@@ -482,7 +482,7 @@
             Update: =DataCardValue18.Text
             Width: =640
             X: =0
-            Y: =6
+            Y: =3
             ZIndex: =6
 
             DataCardKey18 As label:

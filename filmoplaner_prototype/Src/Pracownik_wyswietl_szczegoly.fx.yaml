@@ -1,12 +1,18 @@
 Pracownik_wyswietl_szczegoly As screen:
     Fill: =RGBA(204, 231, 246, 1)
 
+    RectQuickActionBar5_4 As rectangle:
+        Height: =106
+        Width: =Parent.Width
+        ZIndex: =1
+
     FormViewer2 As formViewer:
         DataSource: =Pracownik_1
-        Height: =1135
+        Height: =1029
         Item: =BrowseGallery1.Selected
         Width: =640
-        ZIndex: =1
+        Y: =106
+        ZIndex: =2
 
         Imię_DataCard3 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
@@ -280,6 +286,17 @@ Pracownik_wyswietl_szczegoly As screen:
         OnSelect: =Back()
         Width: =88
         X: =552
-        Y: =8
-        ZIndex: =2
+        Y: =17
+        ZIndex: =3
+
+    Label5 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =106
+        Size: =30
+        Text: |-
+            ="Pracownik:"
+        Width: =560
+        ZIndex: =4
 
