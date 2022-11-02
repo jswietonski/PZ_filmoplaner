@@ -1004,19 +1004,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pracownicy_wyswietl_szczegoly.Icon1_9.AccessibleLabel"
+                  "fullyQualifiedName": "Pracownik_wyswietl_szczegoly.Icon1_9.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pracownicy_wyswietl_szczegoly.Icon1_9.AccessibleLabel",
+                  "fullyQualifiedName": "Pracownik_wyswietl_szczegoly.Icon1_9.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Pracownicy_wyswietl_szczegoly",
-                "type": "Pracownicy_wyswietl_szczegoly.Icon1_9"
+                "module": "Pracownik_wyswietl_szczegoly",
+                "type": "Pracownik_wyswietl_szczegoly.Icon1_9"
               }
             }
           ],
@@ -1034,19 +1034,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pracownicy_wyswietl_szczegoly.Icon1_9.TabIndex"
+                  "fullyQualifiedName": "Pracownik_wyswietl_szczegoly.Icon1_9.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pracownicy_wyswietl_szczegoly.Icon1_9.TabIndex",
+                  "fullyQualifiedName": "Pracownik_wyswietl_szczegoly.Icon1_9.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Pracownicy_wyswietl_szczegoly",
-                "type": "Pracownicy_wyswietl_szczegoly.Icon1_9"
+                "module": "Pracownik_wyswietl_szczegoly",
+                "type": "Pracownik_wyswietl_szczegoly.Icon1_9"
               }
             }
           ],
@@ -3314,126 +3314,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Spotkania_wyswietl_szczegoly.Icon1_18.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Spotkania_wyswietl_szczegoly.Icon1_18.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Spotkania_wyswietl_szczegoly",
-                "type": "Spotkania_wyswietl_szczegoly.Icon1_18"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Spotkania_wyswietl_szczegoly.Icon1_18.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Spotkania_wyswietl_szczegoly.Icon1_18.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Spotkania_wyswietl_szczegoly",
-                "type": "Spotkania_wyswietl_szczegoly.Icon1_18"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Spotkania_wyswietl_szczegoly.FormViewer2_1.Film_DataCard1.DataCardValue4.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Spotkania_wyswietl_szczegoly.FormViewer2_1.Film_DataCard1.DataCardValue4.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Spotkania_wyswietl_szczegoly",
-                "type": "Spotkania_wyswietl_szczegoly.FormViewer2_1.Film_DataCard1.DataCardValue4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Spotkania_wyswietl_szczegoly.FormViewer2_1.Lokalizacja_DataCard3.DataCardValue5.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Spotkania_wyswietl_szczegoly.FormViewer2_1.Lokalizacja_DataCard3.DataCardValue5.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Spotkania_wyswietl_szczegoly",
-                "type": "Spotkania_wyswietl_szczegoly.FormViewer2_1.Lokalizacja_DataCard3.DataCardValue5"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.Filmoplaner"
                 }
               ],
@@ -3464,19 +3344,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pracownicy_wyswietl_szczegoly.FormViewer2.Item"
+                  "fullyQualifiedName": "Pracownik_wyswietl_szczegoly.FormViewer2.Item"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pracownicy_wyswietl_szczegoly.FormViewer2.Item",
+                  "fullyQualifiedName": "Pracownik_wyswietl_szczegoly.FormViewer2.Item",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Item",
-                "module": "Pracownicy_wyswietl_szczegoly",
-                "type": "Pracownicy_wyswietl_szczegoly.FormViewer2"
+                "module": "Pracownik_wyswietl_szczegoly",
+                "type": "Pracownik_wyswietl_szczegoly.FormViewer2"
               }
             }
           ],
