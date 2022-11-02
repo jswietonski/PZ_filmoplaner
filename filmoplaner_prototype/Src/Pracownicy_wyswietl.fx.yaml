@@ -67,7 +67,8 @@
         Height: =106
         Size: =30
         Text: |-
-            ="Pracownicy:"
+            ="Pracownicy
+            "
         Width: =376
         Wrap: =false
         ZIndex: =4
