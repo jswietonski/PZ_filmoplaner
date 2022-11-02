@@ -8,7 +8,7 @@ DisplayAndEditMenu As screen:
 
     Button3 As button:
         Height: =70
-        OnSelect: =Navigate(Pracownicy_wyswietl2)
+        OnSelect: =Navigate(Pracownicy_wyswietl)
         Size: =24
         Text: ="Pracownicy"
         Width: =640

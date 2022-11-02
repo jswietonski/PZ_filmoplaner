@@ -91,46 +91,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "DisplayAndEditMenu.Button3.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "DisplayAndEditMenu.Button3.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 20,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": "Pracownicy_wyswietl2"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "DisplayAndEditMenu",
-                "type": "DisplayAndEditMenu.Button3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Pracownicy_wyswietl2"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "EdytujPracownika.Icon1_10.AccessibleLabel"
                 }
               ],
