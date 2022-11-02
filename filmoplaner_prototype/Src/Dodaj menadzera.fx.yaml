@@ -1,10 +1,5 @@
 "'Dodaj menadzera' As screen.'phoneLayout_HeaderAndForm_ver3.0'":
 
-    RectQuickActionBar9 As rectangle:
-        Height: =88
-        Width: =Parent.Width
-        ZIndex: =1
-
     IconCancel6 As icon.Cancel:
         AccessibleLabel: =Self.Tooltip
         Height: =88
@@ -16,6 +11,11 @@
         TabIndex: =0
         Tooltip: ="Anuluj element"
         Width: =88
+        ZIndex: =1
+
+    RectQuickActionBar9 As rectangle:
+        Height: =88
+        Width: =Parent.Width
         ZIndex: =2
 
     IconAccept6 As icon.Check:

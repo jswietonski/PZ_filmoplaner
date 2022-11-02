@@ -17,6 +17,7 @@ DisplayAndEditMenu As screen:
 
     Button3_1 As button:
         Height: =70
+        OnSelect: =Navigate(Gatunki_wyswietl)
         Size: =24
         Text: ="Gatunki filmów"
         Width: =640

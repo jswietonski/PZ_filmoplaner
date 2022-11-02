@@ -111,6 +111,7 @@
     "MainMenu",
     "DisplayAndEditMenu",
     "Pracownik_wyswietl",
+    "Gatunki_wyswietl",
     "Pracownik_wyswietl_szczegoly",
     "EdytujPracownika",
     "CreateMenu",

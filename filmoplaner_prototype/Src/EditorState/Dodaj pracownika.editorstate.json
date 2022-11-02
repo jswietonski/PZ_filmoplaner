@@ -217,7 +217,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Data Zatrudnienia_DataCard1",
-      "ParentIndex": 2,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7618,7 +7618,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Numer telefonu_DataCard1",
-      "ParentIndex": 6,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7877,7 +7877,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Rola _DataCard1",
-      "ParentIndex": 4,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9996,7 +9996,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Wynagrodzenie_DataCard1",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
