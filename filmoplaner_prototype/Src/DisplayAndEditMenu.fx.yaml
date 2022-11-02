@@ -89,6 +89,6 @@ DisplayAndEditMenu As screen:
         Text: |-
             ="Podpowiedź: po wyświetleniu listy możesz edytować jej poszczególne elementy!"
         Width: =640
-        Y: =1046
+        Y: =1026
         ZIndex: =11
 
