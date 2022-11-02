@@ -1,0 +1,74 @@
+Lokalizacje_wyswietl_szczegoly As screen:
+    Fill: =RGBA(204, 231, 246, 1)
+
+    RectQuickActionBar5_16 As rectangle:
+        Height: =106
+        Width: =Parent.Width
+        ZIndex: =1
+
+    FormViewer2_5 As formViewer:
+        DataSource: =Lokalizacja
+        Height: =1029
+        Item: =BrowseGallery1_5.Selected
+        Width: =640
+        Y: =106
+        ZIndex: =2
+
+        Lokalizacja_DataCard4 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Title"
+            Default: =ThisItem.Lokalizacja
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Lokalizacja],DataSourceInfo.DisplayName,"Title")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =0
+            ZIndex: =3
+
+            DataCardKey64 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue63 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =60
+                Y: =58
+                ZIndex: =2
+
+    Icon1_23 As icon.Undo:
+        Height: =71
+        Icon: =Icon.Undo
+        OnSelect: =Back()
+        Width: =88
+        X: =552
+        Y: =17
+        ZIndex: =3
+
+    Label5_5 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =106
+        Size: =30
+        Text: |-
+            ="Lokalizacja:"
+        Width: =560
+        ZIndex: =4
+

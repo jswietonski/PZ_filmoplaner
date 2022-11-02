@@ -40,7 +40,7 @@
 
         Icon4_1 As icon.Edit:
             Icon: =Icon.Edit
-            OnSelect: =Navigate(EdytujPracownika)
+            OnSelect: =Navigate(EdytujGatunek)
             X: =551
             Y: =16
             ZIndex: =4

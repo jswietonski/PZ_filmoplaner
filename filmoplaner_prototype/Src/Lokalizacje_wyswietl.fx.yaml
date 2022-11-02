@@ -35,7 +35,7 @@
             AccessibleLabel: =Self.Tooltip
             Height: =60
             Icon: =Icon.ChevronRight
-            OnSelect: = Navigate(Pracownicy_wyswietl_szczegoly)
+            OnSelect: = Navigate(Lokalizacje_wyswietl_szczegoly)
             PaddingBottom: =10
             PaddingLeft: =10
             PaddingRight: =10
@@ -56,7 +56,7 @@
 
         Icon4_5 As icon.Edit:
             Icon: =Icon.Edit
-            OnSelect: =Navigate(EdytujPracownika)
+            OnSelect: =Navigate(EdytujLokalizacje)
             X: =504
             Y: =14
             ZIndex: =4

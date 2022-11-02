@@ -1,34 +1,34 @@
-Spotkania_wyswietl_szczegoly As screen:
+Zadania_wyswietl_szczegoly As screen:
     Fill: =RGBA(204, 231, 246, 1)
 
-    RectQuickActionBar5_11 As rectangle:
+    RectQuickActionBar5_14 As rectangle:
         Height: =106
         Width: =Parent.Width
         ZIndex: =1
 
-    FormViewer2_1 As formViewer:
-        DataSource: =Spotkanie
+    FormViewer2_3 As formViewer:
+        DataSource: =Zadanie
         Height: =1029
-        Item: =BrowseGallery1_2.Selected
+        Item: =BrowseGallery1_3.Selected
         Width: =640
         Y: =106
         ZIndex: =2
 
-        Nazwa_DataCard1 As typedDataCard.textualViewCard:
+        "'Opis zadania_DataCard1' As typedDataCard.textualViewCard":
             BorderStyle: =BorderStyle.Solid
-            DataField: ="{Name}"
-            Default: =ThisItem.Nazwa
+            DataField: ="Title"
+            Default: =ThisItem.'Opis zadania'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Spotkanie],DataSourceInfo.DisplayName,"{Name}")
+            DisplayName: =DataSourceInfo([@Zadanie],DataSourceInfo.DisplayName,"Title")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
             Width: =640
             X: =0
             Y: =0
-            ZIndex: =1
+            ZIndex: =3
 
-            DataCardKey1 As label:
+            DataCardKey33 As label:
                 AutoHeight: =true
                 Height: =48
                 Size: =21
@@ -39,7 +39,7 @@ Spotkania_wyswietl_szczegoly As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue1 As label:
+            DataCardValue32 As label:
                 AutoHeight: =true
                 DisplayMode: =Parent.DisplayMode
                 PaddingLeft: =0
@@ -52,21 +52,21 @@ Spotkania_wyswietl_szczegoly As screen:
                 Y: =58
                 ZIndex: =2
 
-        "'Data Rozpoczęcia_DataCard2' As typedDataCard.textualViewCard":
+        "'Termin wykonania_DataCard1' As typedDataCard.textualViewCard":
             BorderStyle: =BorderStyle.Solid
-            DataField: ="field_1"
-            Default: =ThisItem.'Data Rozpoczęcia'
+            DataField: ="field_2"
+            Default: =ThisItem.'Termin wykonania'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Spotkanie],DataSourceInfo.DisplayName,"field_1")
+            DisplayName: =DataSourceInfo([@Zadanie],DataSourceInfo.DisplayName,"field_2")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
             Width: =640
             X: =0
             Y: =1
-            ZIndex: =1
+            ZIndex: =3
 
-            DataCardKey2 As label:
+            DataCardKey41 As label:
                 AutoHeight: =true
                 Height: =48
                 Size: =21
@@ -77,7 +77,7 @@ Spotkania_wyswietl_szczegoly As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue2 As label:
+            DataCardValue40 As label:
                 AutoHeight: =true
                 DisplayMode: =Parent.DisplayMode
                 PaddingLeft: =0
@@ -90,21 +90,22 @@ Spotkania_wyswietl_szczegoly As screen:
                 Y: =58
                 ZIndex: =2
 
-        "'Godzina Rozpoczęcia_DataCard2' As typedDataCard.textualViewCard":
+        Pracownik_DataCard1 As typedDataCard.comboBoxViewCard:
             BorderStyle: =BorderStyle.Solid
-            DataField: ="field_2"
-            Default: =ThisItem.'Godzina Rozpoczęcia'
+            DataField: ="Pracownik"
+            Default: =ThisItem.Pracownik
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Spotkanie],DataSourceInfo.DisplayName,"field_2")
+            DisplayName: =DataSourceInfo([@Zadanie],DataSourceInfo.DisplayName,"Pracownik")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
+            Height: =50
             Required: =false
+            Update: =DataCardValue42.Selected
             Width: =640
             X: =0
             Y: =2
-            ZIndex: =1
+            ZIndex: =3
 
-            DataCardKey3 As label:
+            DataCardKey43 As label:
                 AutoHeight: =true
                 Height: =48
                 Size: =21
@@ -115,35 +116,66 @@ Spotkania_wyswietl_szczegoly As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue3 As label:
-                AutoHeight: =true
+            DataCardValue42 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
+                Height: =70
+                Items: =Choices([@Zadanie].Pracownik)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices(Zadanie.Pracownik,DataCardValue42.SearchText)
+                SelectMultiple: =false
                 Size: =21
-                Text: =Parent.Default
-                Width: =Parent.Width - 60
+                Width: =550
                 X: =60
                 Y: =58
                 ZIndex: =2
 
-        Film_DataCard1 As typedDataCard.comboBoxViewCard:
+            ErrorMessage3 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue42.Y + DataCardValue42.Height
+                ZIndex: =3
+
+            StarVisible3 As label:
+                Align: =Align.Center
+                Height: =DataCardKey43.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey43.Y
+                ZIndex: =4
+
+        Menedżer_DataCard1 As typedDataCard.comboBoxViewCard:
             BorderStyle: =BorderStyle.Solid
-            DataField: ="ID_film1"
-            Default: =ThisItem.Film
+            DataField: ="Mened_x017c_er"
+            Default: =ThisItem.Menedżer
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Spotkanie],DataSourceInfo.DisplayName,"ID_film1")
+            DisplayName: =DataSourceInfo([@Zadanie],DataSourceInfo.DisplayName,"Mened_x017c_er")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =DataCardValue4.Selected
+            Update: =DataCardValue48.Selected
             Width: =640
             X: =0
             Y: =3
-            ZIndex: =1
+            ZIndex: =3
 
-            DataCardKey4 As label:
+            DataCardKey49 As label:
                 AutoHeight: =true
                 Height: =48
                 Size: =21
@@ -154,24 +186,24 @@ Spotkania_wyswietl_szczegoly As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue4 As combobox:
+            DataCardValue48 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Height: =70
-                Items: =Choices([@Spotkanie].Film)
+                Items: =Choices([@Zadanie].Mened_x017c_er)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices(Spotkanie.Film,DataCardValue4.SearchText)
+                SearchItems: =Choices(Zadanie.Mened_x017c_er,DataCardValue48.SearchText)
                 SelectMultiple: =false
                 Size: =21
                 Width: =550
                 X: =60
-                Y: =DataCardKey4.Y + DataCardKey4.Height + 5
+                Y: =DataCardKey49.Y + DataCardKey49.Height + 5
                 ZIndex: =2
 
-            ErrorMessage1 As label:
+            ErrorMessage4 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -184,36 +216,36 @@ Spotkania_wyswietl_szczegoly As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue4.Y + DataCardValue4.Height
+                Y: =DataCardValue48.Y + DataCardValue48.Height
                 ZIndex: =3
 
-            StarVisible1 As label:
+            StarVisible4 As label:
                 Align: =Align.Center
-                Height: =DataCardKey4.Height
+                Height: =DataCardKey49.Height
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey4.Y
+                Y: =DataCardKey49.Y
                 ZIndex: =4
 
-        Lokalizacja_DataCard3 As typedDataCard.comboBoxViewCard:
+        Film_DataCard2 As typedDataCard.comboBoxViewCard:
             BorderStyle: =BorderStyle.Solid
-            DataField: ="Lokalizacja"
-            Default: =ThisItem.Lokalizacja
+            DataField: ="Film"
+            Default: =ThisItem.Film
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Spotkanie],DataSourceInfo.DisplayName,"Lokalizacja")
+            DisplayName: =DataSourceInfo([@Zadanie],DataSourceInfo.DisplayName,"Film")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =DataCardValue5.Selected
+            Update: =DataCardValue49.Selected
             Width: =640
             X: =0
             Y: =4
-            ZIndex: =1
+            ZIndex: =3
 
-            DataCardKey5 As label:
+            DataCardKey50 As label:
                 AutoHeight: =true
                 Height: =48
                 Size: =21
@@ -224,24 +256,24 @@ Spotkania_wyswietl_szczegoly As screen:
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue5 As combobox:
+            DataCardValue49 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Height: =70
-                Items: =Choices([@Spotkanie].Lokalizacja)
+                Items: =Choices([@Zadanie].Film)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices(Spotkanie.Lokalizacja,DataCardValue5.SearchText)
+                SearchItems: =Choices(Zadanie.Film,DataCardValue49.SearchText)
                 SelectMultiple: =false
                 Size: =21
                 Width: =550
                 X: =60
-                Y: =DataCardKey5.Y + DataCardKey5.Height + 5
+                Y: =60
                 ZIndex: =2
 
-            ErrorMessage2 As label:
+            ErrorMessage5 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -254,21 +286,21 @@ Spotkania_wyswietl_szczegoly As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue5.Y + DataCardValue5.Height
+                Y: =DataCardValue49.Y + DataCardValue49.Height
                 ZIndex: =3
 
-            StarVisible2 As label:
+            StarVisible5 As label:
                 Align: =Align.Center
-                Height: =DataCardKey5.Height
+                Height: =DataCardKey50.Height
                 Size: =21
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey5.Y
+                Y: =DataCardKey50.Y
                 ZIndex: =4
 
-    Icon1_18 As icon.Undo:
+    Icon1_21 As icon.Undo:
         Height: =71
         Icon: =Icon.Undo
         OnSelect: =Back()
@@ -277,14 +309,14 @@ Spotkania_wyswietl_szczegoly As screen:
         Y: =17
         ZIndex: =3
 
-    Label5_1 As label:
+    Label5_3 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Semibold
         Height: =106
         Size: =30
         Text: |-
-            ="Spotkanie:"
+            ="Zadanie:"
         Width: =560
         ZIndex: =4
 
