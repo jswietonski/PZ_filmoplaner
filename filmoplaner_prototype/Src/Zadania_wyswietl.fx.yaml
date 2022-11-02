@@ -1,37 +1,37 @@
-"Pracownik_wyswietl As screen.'phoneLayout_HeaderAndGallery_ver3.0'":
+"Zadania_wyswietl As screen.'phoneLayout_HeaderAndGallery_ver3.0'":
     Fill: =RGBA(204, 231, 246, 1)
 
-    RectQuickActionBar5_3 As rectangle:
+    RectQuickActionBar5_7 As rectangle:
         Height: =106
         Width: =Parent.Width
         ZIndex: =1
 
-    "BrowseGallery1 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
-        Height: =Parent.Height - BrowseGallery1.Y
-        Items: =Pracownik_1
+    "BrowseGallery1_3 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
+        Height: =Parent.Height - BrowseGallery1_3.Y
+        Items: =Zadanie_1
         Layout: =Layout.Vertical
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =Min(96, Self.Height - 60)
         Width: =Parent.Width
-        Y: =TextSearchBox1.Y + TextSearchBox1.Height
+        Y: =TextSearchBox1_3.Y + TextSearchBox1_3.Height
         ZIndex: =2
 
-        Title6 As label:
+        Title6_3 As label:
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.Imię&" "&ThisItem.Nazwisko
+            Text: =ThisItem.'Opis zadania'&" "&ThisItem.'Termin wykonania'
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
             X: =32
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =1
 
-        NextArrow6 As icon.ChevronRight:
+        NextArrow6_3 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
             Height: =60
             Icon: =Icon.ChevronRight
@@ -47,32 +47,32 @@
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =2
 
-        Separator7 As rectangle:
+        Separator7_3 As rectangle:
             Height: =1
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
             Y: =Parent.TemplateHeight - 1
             ZIndex: =3
 
-        Icon4 As icon.Edit:
+        Icon4_3 As icon.Edit:
             Icon: =Icon.Edit
             OnSelect: =Navigate(EdytujPracownika)
             X: =504
             Y: =14
             ZIndex: =4
 
-    LblAppName2 As label:
+    LblAppName2_3 As label:
         Align: =Align.Center
         FontWeight: =FontWeight.Semibold
         Height: =106
         Size: =30
-        Text: ="Pracownicy"
+        Text: ="Zadania"
         Width: =376
         Wrap: =false
         ZIndex: =4
 
-    IconRefresh1 As icon.Reload:
-        AccessibleLabel: =IconRefresh1.Tooltip
+    IconRefresh1_3 As icon.Reload:
+        AccessibleLabel: =IconRefresh1_3.Tooltip
         Height: =88
         Icon: =Icon.Reload
         PaddingBottom: =22
@@ -86,8 +86,8 @@
         Y: =9
         ZIndex: =5
 
-    IconSortUpDown1 As icon.ArrowsUpDown:
-        AccessibleLabel: =IconSortUpDown1.Tooltip
+    IconSortUpDown1_3 As icon.ArrowsUpDown:
+        AccessibleLabel: =IconSortUpDown1_3.Tooltip
         Height: =88
         Icon: =Icon.Sort
         OnSelect: |-
@@ -103,7 +103,7 @@
         Y: =9
         ZIndex: =6
 
-    TextSearchBox1 As text:
+    TextSearchBox1_3 As text:
         Align: =Left
         Default: =""
         Height: =68
@@ -118,26 +118,26 @@
         Y: =106
         ZIndex: =7
 
-    SearchIcon1 As icon.Search:
-        Height: =SearchIcon1.Width
+    SearchIcon1_3 As icon.Search:
+        Height: =SearchIcon1_3.Width
         Icon: =Icon.Search
         PaddingBottom: =14
         PaddingLeft: =14
         PaddingRight: =14
         PaddingTop: =14
         Tooltip: ="Wyszukaj"
-        Width: =TextSearchBox1.Height
-        X: =TextSearchBox1.X
-        Y: =TextSearchBox1.Y
+        Width: =TextSearchBox1_3.Height
+        X: =TextSearchBox1_3.X
+        Y: =TextSearchBox1_3.Y
         ZIndex: =8
 
-    Rectangle12 As rectangle:
+    Rectangle12_3 As rectangle:
         Height: =2
         Width: =Parent.Width
-        Y: =TextSearchBox1.Y + TextSearchBox1.Height
+        Y: =TextSearchBox1_3.Y + TextSearchBox1_3.Height
         ZIndex: =9
 
-    Icon1_11 As icon.Undo:
+    Icon1_14 As icon.Undo:
         Height: =71
         Icon: =Icon.Undo
         OnSelect: =Back()
