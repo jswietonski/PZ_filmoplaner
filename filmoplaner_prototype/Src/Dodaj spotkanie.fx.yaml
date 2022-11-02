@@ -1,4 +1,5 @@
-"'Nowe spotkanie' As screen.'phoneLayout_HeaderAndForm_ver3.0'":
+"'Dodaj spotkanie' As screen.'phoneLayout_HeaderAndForm_ver3.0'":
+    Fill: =RGBA(204, 231, 246, 1)
 
     IconCancel4 As icon.Cancel:
         AccessibleLabel: =Self.Tooltip
@@ -13,8 +14,8 @@
         Width: =88
         ZIndex: =1
 
-    RectQuickActionBar7 As rectangle:
-        Height: =88
+    RectQuickActionBar5_28 As rectangle:
+        Height: =106
         Width: =Parent.Width
         ZIndex: =2
 
@@ -31,24 +32,26 @@
         Tooltip: ="Prześlij element"
         Width: =88
         X: =464
+        Y: =9
         ZIndex: =3
 
     LblAppName7 As label:
-        Height: =88
-        Size: =27
-        Text: ="Nowe spotkanie"
-        Width: =376
+        Align: =Align.Center
+        FontWeight: =FontWeight.Semibold
+        Height: =106
+        Size: =30
+        Text: ="Dodaj spotkanie"
+        Width: =464
         Wrap: =false
-        X: =IconCancel4.X + IconCancel4.Width
         ZIndex: =4
 
     EditForm4 As form:
         DataSource: =Spotkanie
-        Height: =Parent.Height - EditForm4.Y
+        Height: =1030
         Item: |
             =Defaults(Spotkanie)
         Width: =Parent.Width
-        Y: =RectQuickActionBar7.Height
+        Y: =106
         ZIndex: =5
 
         "'Data Rozpoczęcia_DataCard1' As typedDataCard.dateEditCard":
@@ -463,6 +466,6 @@
         OnSelect: =Back()
         Width: =88
         X: =552
-        Y: =8
+        Y: =17
         ZIndex: =6
 

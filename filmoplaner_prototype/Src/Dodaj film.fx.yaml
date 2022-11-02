@@ -1,4 +1,5 @@
 "'Dodaj film' As screen.'phoneLayout_HeaderAndForm_ver3.0'":
+    Fill: =RGBA(204, 231, 246, 1)
 
     IconCancel8 As icon.Cancel:
         AccessibleLabel: =Self.Tooltip
@@ -13,8 +14,8 @@
         Width: =88
         ZIndex: =1
 
-    RectQuickActionBar11 As rectangle:
-        Height: =88
+    RectQuickActionBar5_32 As rectangle:
+        Height: =106
         Width: =Parent.Width
         ZIndex: =2
 
@@ -31,23 +32,25 @@
         Tooltip: ="Prześlij element"
         Width: =88
         X: =464
+        Y: =9
         ZIndex: =3
 
     LblAppName11 As label:
-        Height: =88
-        Size: =27
+        Align: =Align.Center
+        FontWeight: =FontWeight.Semibold
+        Height: =106
+        Size: =30
         Text: ="Dodaj film"
-        Width: =358
+        Width: =464
         Wrap: =false
-        X: =IconCancel8.X + IconCancel8.Width
         ZIndex: =4
 
     EditForm8 As form:
         DataSource: =Film_1
-        Height: =Parent.Height - EditForm8.Y
+        Height: =1030
         Item: =Defaults(Film_1)
         Width: =Parent.Width
-        Y: =RectQuickActionBar11.Height
+        Y: =106
         ZIndex: =5
 
         "'Nazwa (Title)_DataCard1' As typedDataCard.textualEditCard":
@@ -414,6 +417,6 @@
         OnSelect: =Back()
         Width: =88
         X: =552
-        Y: =8
+        Y: =17
         ZIndex: =6
 

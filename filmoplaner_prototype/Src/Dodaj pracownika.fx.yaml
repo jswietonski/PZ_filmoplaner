@@ -1,8 +1,8 @@
 "'Dodaj pracownika' As screen.'phoneLayout_HeaderAndForm_ver3.0'":
     Fill: =RGBA(204, 231, 246, 1)
 
-    RectQuickActionBar5 As rectangle:
-        Height: =88
+    RectQuickActionBar5_26 As rectangle:
+        Height: =106
         Width: =Parent.Width
         ZIndex: =1
 
@@ -19,23 +19,25 @@
         Tooltip: ="Prześlij element"
         Width: =88
         X: =464
+        Y: =9
         ZIndex: =3
 
     LblAppName5 As label:
-        Height: =88
-        Size: =27
+        Align: =Align.Center
+        FontWeight: =FontWeight.Semibold
+        Height: =105
+        Size: =30
         Text: ="Dodaj pracownika"
-        Width: =376
+        Width: =464
         Wrap: =false
-        X: =88
         ZIndex: =4
 
     EditForm2 As form:
         DataSource: =Pracownik_1
-        Height: =Parent.Height - EditForm2.Y
+        Height: =1030
         Item: =Defaults(Pracownik_1)
         Width: =Parent.Width
-        Y: =RectQuickActionBar5.Height
+        Y: =105
         ZIndex: =5
 
         Imię_DataCard1 As typedDataCard.textualEditCard:
@@ -548,6 +550,6 @@
         OnSelect: =Back()
         Width: =88
         X: =552
-        Y: =8
-        ZIndex: =7
+        Y: =17
+        ZIndex: =6
 

@@ -48,8 +48,8 @@ Filmy_wyswietl_szczegoly As screen:
                 Size: =21
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey73.Y + DataCardKey73.Height + 5
+                X: =60
+                Y: =58
                 ZIndex: =2
 
         "'Nazwa (Title)_DataCard2' As typedDataCard.textualViewCard":

@@ -1,4 +1,5 @@
 "'Dodaj menadzera' As screen.'phoneLayout_HeaderAndForm_ver3.0'":
+    Fill: =RGBA(204, 231, 246, 1)
 
     IconCancel6 As icon.Cancel:
         AccessibleLabel: =Self.Tooltip
@@ -13,8 +14,8 @@
         Width: =88
         ZIndex: =1
 
-    RectQuickActionBar9 As rectangle:
-        Height: =88
+    RectQuickActionBar5_30 As rectangle:
+        Height: =106
         Width: =Parent.Width
         ZIndex: =2
 
@@ -31,23 +32,25 @@
         Tooltip: ="Prześlij element"
         Width: =88
         X: =464
+        Y: =8
         ZIndex: =3
 
     LblAppName9 As label:
-        Height: =88
-        Size: =27
-        Text: ="Dodaj menadżera"
-        Width: =376
+        Align: =Align.Center
+        FontWeight: =FontWeight.Semibold
+        Height: =106
+        Size: =30
+        Text: ="Dodaj menedżera"
+        Width: =464
         Wrap: =false
-        X: =IconCancel6.X + IconCancel6.Width
         ZIndex: =4
 
     EditForm6 As form:
         DataSource: =Menedżer
-        Height: =Parent.Height - EditForm6.Y
+        Height: =1030
         Item: =Defaults(Menedżer)
         Width: =Parent.Width
-        Y: =RectQuickActionBar9.Height
+        Y: =106
         ZIndex: =5
 
         "'imie _DataCard1' As typedDataCard.textualEditCard":
@@ -560,6 +563,6 @@
         OnSelect: =Back()
         Width: =88
         X: =552
-        Y: =8
+        Y: =17
         ZIndex: =6
 

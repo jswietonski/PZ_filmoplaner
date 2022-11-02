@@ -1,6 +1,11 @@
 "CreateMenu As screen.'phoneBrowseLayout_ver3.0'":
     Fill: =RGBA(204, 231, 246, 1)
 
+    RectQuickActionBar5_25 As rectangle:
+        Height: =106
+        Width: =Parent.Width
+        ZIndex: =1
+
     LblAppName1 As label:
         Fill: =RGBA(58, 58, 58, 0)
         Height: =88
@@ -18,7 +23,7 @@
         Text: ="pracownika"
         Width: =640
         Y: =229
-        ZIndex: =9
+        ZIndex: =3
 
     Button1_1 As button:
         Height: =70
@@ -27,25 +32,25 @@
         Text: ="gatunek filmowy"
         Width: =640
         Y: =329
-        ZIndex: =10
+        ZIndex: =4
 
     Button1_2 As button:
         Height: =70
-        OnSelect: =Navigate('Nowe spotkanie')
+        OnSelect: =Navigate('Dodaj spotkanie')
         Size: =24
         Text: ="spotkanie"
         Width: =640
         Y: =428
-        ZIndex: =11
+        ZIndex: =5
 
     Button1_3 As button:
         Height: =70
-        OnSelect: =Navigate('Nowe zadanie')
+        OnSelect: =Navigate('Dodaj zadanie')
         Size: =24
         Text: ="zadanie"
         Width: =640
         Y: =527
-        ZIndex: =12
+        ZIndex: =6
 
     Button1_4 As button:
         Height: =70
@@ -54,7 +59,7 @@
         Text: ="menedżera"
         Width: =640
         Y: =621
-        ZIndex: =13
+        ZIndex: =7
 
     Button1_5 As button:
         Height: =70
@@ -63,7 +68,7 @@
         Text: ="lokalizację"
         Width: =640
         Y: =714
-        ZIndex: =14
+        ZIndex: =8
 
     Button1_6 As button:
         Height: =70
@@ -72,17 +77,17 @@
         Text: ="film"
         Width: =640
         Y: =813
-        ZIndex: =15
+        ZIndex: =9
 
     Label1 As label:
         Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Semibold
-        Height: =70
+        Height: =106
         Size: =30
         Text: ="Dodaj..."
         Width: =560
-        Y: =6
-        ZIndex: =16
+        ZIndex: =10
 
     Icon1_7 As icon.Undo:
         Height: =71
@@ -90,6 +95,6 @@
         OnSelect: =Back()
         Width: =88
         X: =552
-        Y: =6
-        ZIndex: =17
+        Y: =17
+        ZIndex: =11
 

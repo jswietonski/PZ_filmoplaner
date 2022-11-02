@@ -14,19 +14,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Nowe spotkanie'.Icon1_2.AccessibleLabel"
+                  "fullyQualifiedName": "'Dodaj spotkanie'.Icon1_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Nowe spotkanie'.Icon1_2.AccessibleLabel",
+                  "fullyQualifiedName": "'Dodaj spotkanie'.Icon1_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Nowe spotkanie",
-                "type": "'Nowe spotkanie'.Icon1_2"
+                "module": "Dodaj spotkanie",
+                "type": "'Dodaj spotkanie'.Icon1_2"
               }
             }
           ],
@@ -44,19 +44,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Nowe spotkanie'.Icon1_2.TabIndex"
+                  "fullyQualifiedName": "'Dodaj spotkanie'.Icon1_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Nowe spotkanie'.Icon1_2.TabIndex",
+                  "fullyQualifiedName": "'Dodaj spotkanie'.Icon1_2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Nowe spotkanie",
-                "type": "'Nowe spotkanie'.Icon1_2"
+                "module": "Dodaj spotkanie",
+                "type": "'Dodaj spotkanie'.Icon1_2"
               }
             }
           ],
@@ -74,19 +74,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Nowe spotkanie'.EditForm4.'Data Rozpoczęcia_DataCard1'.DataCardValue22.AccessibleLabel"
+                  "fullyQualifiedName": "'Dodaj spotkanie'.EditForm4.'Data Rozpoczęcia_DataCard1'.DataCardValue22.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Nowe spotkanie'.EditForm4.'Data Rozpoczęcia_DataCard1'.DataCardValue22.AccessibleLabel",
+                  "fullyQualifiedName": "'Dodaj spotkanie'.EditForm4.'Data Rozpoczęcia_DataCard1'.DataCardValue22.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Nowe spotkanie",
-                "type": "'Nowe spotkanie'.EditForm4.'Data Rozpoczęcia_DataCard1'.DataCardValue22"
+                "module": "Dodaj spotkanie",
+                "type": "'Dodaj spotkanie'.EditForm4.'Data Rozpoczęcia_DataCard1'.DataCardValue22"
               }
             }
           ],
@@ -104,19 +104,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Nowe spotkanie'.EditForm4.'Godzina Rozpoczęcia_DataCard1'.DateValue1.AccessibleLabel"
+                  "fullyQualifiedName": "'Dodaj spotkanie'.EditForm4.'Godzina Rozpoczęcia_DataCard1'.DateValue1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Nowe spotkanie'.EditForm4.'Godzina Rozpoczęcia_DataCard1'.DateValue1.AccessibleLabel",
+                  "fullyQualifiedName": "'Dodaj spotkanie'.EditForm4.'Godzina Rozpoczęcia_DataCard1'.DateValue1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Nowe spotkanie",
-                "type": "'Nowe spotkanie'.EditForm4.'Godzina Rozpoczęcia_DataCard1'.DateValue1"
+                "module": "Dodaj spotkanie",
+                "type": "'Dodaj spotkanie'.EditForm4.'Godzina Rozpoczęcia_DataCard1'.DateValue1"
               }
             }
           ],
@@ -134,19 +134,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Nowe spotkanie'.EditForm4.'Godzina Rozpoczęcia_DataCard1'.HourValue1.AccessibleLabel"
+                  "fullyQualifiedName": "'Dodaj spotkanie'.EditForm4.'Godzina Rozpoczęcia_DataCard1'.HourValue1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Nowe spotkanie'.EditForm4.'Godzina Rozpoczęcia_DataCard1'.HourValue1.AccessibleLabel",
+                  "fullyQualifiedName": "'Dodaj spotkanie'.EditForm4.'Godzina Rozpoczęcia_DataCard1'.HourValue1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Nowe spotkanie",
-                "type": "'Nowe spotkanie'.EditForm4.'Godzina Rozpoczęcia_DataCard1'.HourValue1"
+                "module": "Dodaj spotkanie",
+                "type": "'Dodaj spotkanie'.EditForm4.'Godzina Rozpoczęcia_DataCard1'.HourValue1"
               }
             }
           ],
@@ -164,19 +164,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Nowe spotkanie'.EditForm4.'Godzina Rozpoczęcia_DataCard1'.MinuteValue1.AccessibleLabel"
+                  "fullyQualifiedName": "'Dodaj spotkanie'.EditForm4.'Godzina Rozpoczęcia_DataCard1'.MinuteValue1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Nowe spotkanie'.EditForm4.'Godzina Rozpoczęcia_DataCard1'.MinuteValue1.AccessibleLabel",
+                  "fullyQualifiedName": "'Dodaj spotkanie'.EditForm4.'Godzina Rozpoczęcia_DataCard1'.MinuteValue1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Nowe spotkanie",
-                "type": "'Nowe spotkanie'.EditForm4.'Godzina Rozpoczęcia_DataCard1'.MinuteValue1"
+                "module": "Dodaj spotkanie",
+                "type": "'Dodaj spotkanie'.EditForm4.'Godzina Rozpoczęcia_DataCard1'.MinuteValue1"
               }
             }
           ],
@@ -194,19 +194,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Nowe spotkanie'.EditForm4.Opis_DataCard1.DataCardValue23.AccessibleLabel"
+                  "fullyQualifiedName": "'Dodaj spotkanie'.EditForm4.Opis_DataCard1.DataCardValue23.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Nowe spotkanie'.EditForm4.Opis_DataCard1.DataCardValue23.AccessibleLabel",
+                  "fullyQualifiedName": "'Dodaj spotkanie'.EditForm4.Opis_DataCard1.DataCardValue23.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Nowe spotkanie",
-                "type": "'Nowe spotkanie'.EditForm4.Opis_DataCard1.DataCardValue23"
+                "module": "Dodaj spotkanie",
+                "type": "'Dodaj spotkanie'.EditForm4.Opis_DataCard1.DataCardValue23"
               }
             }
           ],
@@ -224,19 +224,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Nowe spotkanie'.EditForm4.Film_DataCard3.DataCardValue24.AccessibleLabel"
+                  "fullyQualifiedName": "'Dodaj spotkanie'.EditForm4.Film_DataCard3.DataCardValue24.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Nowe spotkanie'.EditForm4.Film_DataCard3.DataCardValue24.AccessibleLabel",
+                  "fullyQualifiedName": "'Dodaj spotkanie'.EditForm4.Film_DataCard3.DataCardValue24.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Nowe spotkanie",
-                "type": "'Nowe spotkanie'.EditForm4.Film_DataCard3.DataCardValue24"
+                "module": "Dodaj spotkanie",
+                "type": "'Dodaj spotkanie'.EditForm4.Film_DataCard3.DataCardValue24"
               }
             }
           ],
@@ -254,19 +254,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Nowe spotkanie'.EditForm4.Lokalizacja_DataCard1.DataCardValue25.AccessibleLabel"
+                  "fullyQualifiedName": "'Dodaj spotkanie'.EditForm4.Lokalizacja_DataCard1.DataCardValue25.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Nowe spotkanie'.EditForm4.Lokalizacja_DataCard1.DataCardValue25.AccessibleLabel",
+                  "fullyQualifiedName": "'Dodaj spotkanie'.EditForm4.Lokalizacja_DataCard1.DataCardValue25.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Nowe spotkanie",
-                "type": "'Nowe spotkanie'.EditForm4.Lokalizacja_DataCard1.DataCardValue25"
+                "module": "Dodaj spotkanie",
+                "type": "'Dodaj spotkanie'.EditForm4.Lokalizacja_DataCard1.DataCardValue25"
               }
             }
           ],
@@ -284,19 +284,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Nowe zadanie'.Icon1_3.AccessibleLabel"
+                  "fullyQualifiedName": "'Dodaj zadanie'.Icon1_3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Nowe zadanie'.Icon1_3.AccessibleLabel",
+                  "fullyQualifiedName": "'Dodaj zadanie'.Icon1_3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Nowe zadanie",
-                "type": "'Nowe zadanie'.Icon1_3"
+                "module": "Dodaj zadanie",
+                "type": "'Dodaj zadanie'.Icon1_3"
               }
             }
           ],
@@ -314,19 +314,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Nowe zadanie'.Icon1_3.TabIndex"
+                  "fullyQualifiedName": "'Dodaj zadanie'.Icon1_3.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Nowe zadanie'.Icon1_3.TabIndex",
+                  "fullyQualifiedName": "'Dodaj zadanie'.Icon1_3.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Nowe zadanie",
-                "type": "'Nowe zadanie'.Icon1_3"
+                "module": "Dodaj zadanie",
+                "type": "'Dodaj zadanie'.Icon1_3"
               }
             }
           ],
@@ -344,19 +344,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Nowe zadanie'.EditForm5.'Opis zadania_DataCard3'.DataCardValue27.AccessibleLabel"
+                  "fullyQualifiedName": "'Dodaj zadanie'.EditForm5.'Opis zadania_DataCard3'.DataCardValue27.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Nowe zadanie'.EditForm5.'Opis zadania_DataCard3'.DataCardValue27.AccessibleLabel",
+                  "fullyQualifiedName": "'Dodaj zadanie'.EditForm5.'Opis zadania_DataCard3'.DataCardValue27.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Nowe zadanie",
-                "type": "'Nowe zadanie'.EditForm5.'Opis zadania_DataCard3'.DataCardValue27"
+                "module": "Dodaj zadanie",
+                "type": "'Dodaj zadanie'.EditForm5.'Opis zadania_DataCard3'.DataCardValue27"
               }
             }
           ],
@@ -374,19 +374,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Nowe zadanie'.EditForm5.'Termin wykonania_DataCard3'.DataCardValue28.AccessibleLabel"
+                  "fullyQualifiedName": "'Dodaj zadanie'.EditForm5.'Termin wykonania_DataCard3'.DataCardValue28.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Nowe zadanie'.EditForm5.'Termin wykonania_DataCard3'.DataCardValue28.AccessibleLabel",
+                  "fullyQualifiedName": "'Dodaj zadanie'.EditForm5.'Termin wykonania_DataCard3'.DataCardValue28.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Nowe zadanie",
-                "type": "'Nowe zadanie'.EditForm5.'Termin wykonania_DataCard3'.DataCardValue28"
+                "module": "Dodaj zadanie",
+                "type": "'Dodaj zadanie'.EditForm5.'Termin wykonania_DataCard3'.DataCardValue28"
               }
             }
           ],
@@ -404,19 +404,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Nowe zadanie'.EditForm5.Pracownik_DataCard3.DataCardValue29.AccessibleLabel"
+                  "fullyQualifiedName": "'Dodaj zadanie'.EditForm5.Pracownik_DataCard3.DataCardValue29.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Nowe zadanie'.EditForm5.Pracownik_DataCard3.DataCardValue29.AccessibleLabel",
+                  "fullyQualifiedName": "'Dodaj zadanie'.EditForm5.Pracownik_DataCard3.DataCardValue29.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Nowe zadanie",
-                "type": "'Nowe zadanie'.EditForm5.Pracownik_DataCard3.DataCardValue29"
+                "module": "Dodaj zadanie",
+                "type": "'Dodaj zadanie'.EditForm5.Pracownik_DataCard3.DataCardValue29"
               }
             }
           ],
@@ -434,19 +434,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Nowe zadanie'.EditForm5.Menedżer_DataCard3.DataCardValue30.AccessibleLabel"
+                  "fullyQualifiedName": "'Dodaj zadanie'.EditForm5.Menedżer_DataCard3.DataCardValue30.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Nowe zadanie'.EditForm5.Menedżer_DataCard3.DataCardValue30.AccessibleLabel",
+                  "fullyQualifiedName": "'Dodaj zadanie'.EditForm5.Menedżer_DataCard3.DataCardValue30.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Nowe zadanie",
-                "type": "'Nowe zadanie'.EditForm5.Menedżer_DataCard3.DataCardValue30"
+                "module": "Dodaj zadanie",
+                "type": "'Dodaj zadanie'.EditForm5.Menedżer_DataCard3.DataCardValue30"
               }
             }
           ],
@@ -464,19 +464,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Nowe zadanie'.EditForm5.Film_DataCard4.DataCardValue31.AccessibleLabel"
+                  "fullyQualifiedName": "'Dodaj zadanie'.EditForm5.Film_DataCard4.DataCardValue31.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Nowe zadanie'.EditForm5.Film_DataCard4.DataCardValue31.AccessibleLabel",
+                  "fullyQualifiedName": "'Dodaj zadanie'.EditForm5.Film_DataCard4.DataCardValue31.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Nowe zadanie",
-                "type": "'Nowe zadanie'.EditForm5.Film_DataCard4.DataCardValue31"
+                "module": "Dodaj zadanie",
+                "type": "'Dodaj zadanie'.EditForm5.Film_DataCard4.DataCardValue31"
               }
             }
           ],

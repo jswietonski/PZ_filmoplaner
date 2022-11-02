@@ -1,4 +1,10 @@
 "'Dodaj gatunek' As screen.'phoneLayout_HeaderAndForm_ver3.0'":
+    Fill: =RGBA(204, 231, 246, 1)
+
+    RectQuickActionBar5_27 As rectangle:
+        Height: =106
+        Width: =Parent.Width
+        ZIndex: =1
 
     IconCancel3 As icon.Cancel:
         AccessibleLabel: =Self.Tooltip
@@ -11,12 +17,12 @@
         TabIndex: =0
         Tooltip: ="Anuluj element"
         Width: =88
-        ZIndex: =1
+        ZIndex: =2
 
     RectQuickActionBar6 As rectangle:
         Height: =88
         Width: =Parent.Width
-        ZIndex: =2
+        ZIndex: =3
 
     IconAccept3 As icon.Check:
         AccessibleLabel: =Self.Tooltip
@@ -31,24 +37,26 @@
         Tooltip: ="Prześlij element"
         Width: =88
         X: =464
-        ZIndex: =3
+        Y: =9
+        ZIndex: =4
 
     LblAppName6 As label:
-        Height: =88
-        Size: =27
+        Align: =Align.Center
+        FontWeight: =FontWeight.Semibold
+        Height: =106
+        Size: =30
         Text: ="Dodaj gatunek"
-        Width: =376
+        Width: =464
         Wrap: =false
-        X: =IconCancel3.X + IconCancel3.Width
-        ZIndex: =4
+        ZIndex: =5
 
     EditForm3 As form:
         DataSource: ='Gatunki filmów_1'
-        Height: =Parent.Height - EditForm3.Y
+        Height: =1030
         Item: =Defaults('Gatunki filmów')
         Width: =Parent.Width
-        Y: =RectQuickActionBar6.Height
-        ZIndex: =5
+        Y: =106
+        ZIndex: =6
 
         "'Nazwa Gatunku_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -57,7 +65,7 @@
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Gatunki filmów_1'],DataSourceInfo.DisplayName,"Title")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =181
             MaxLength: =DataSourceInfo([@'Gatunki filmów_1'], DataSourceInfo.MaxLength, "Title")
             Required: =false
             Update: =DataCardValue20.Text
@@ -129,6 +137,6 @@
         OnSelect: =Back()
         Width: =88
         X: =552
-        Y: =8
-        ZIndex: =6
+        Y: =17
+        ZIndex: =7
 

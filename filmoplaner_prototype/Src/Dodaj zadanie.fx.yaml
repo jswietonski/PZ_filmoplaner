@@ -1,4 +1,5 @@
-"'Nowe zadanie' As screen.'phoneLayout_HeaderAndForm_ver3.0'":
+"'Dodaj zadanie' As screen.'phoneLayout_HeaderAndForm_ver3.0'":
+    Fill: =RGBA(204, 231, 246, 1)
 
     IconCancel5 As icon.Cancel:
         AccessibleLabel: =Self.Tooltip
@@ -13,8 +14,8 @@
         Width: =88
         ZIndex: =1
 
-    RectQuickActionBar8 As rectangle:
-        Height: =88
+    RectQuickActionBar5_29 As rectangle:
+        Height: =106
         Width: =Parent.Width
         ZIndex: =2
 
@@ -31,23 +32,25 @@
         Tooltip: ="Prześlij element"
         Width: =88
         X: =464
+        Y: =9
         ZIndex: =3
 
     LblAppName8 As label:
-        Height: =88
-        Size: =27
-        Text: ="Nowe zadanie"
-        Width: =342
+        Align: =Align.Center
+        FontWeight: =FontWeight.Semibold
+        Height: =106
+        Size: =30
+        Text: ="Dodaj zadanie"
+        Width: =464
         Wrap: =false
-        X: =IconCancel5.X + IconCancel5.Width
         ZIndex: =4
 
     EditForm5 As form:
         DataSource: =Zadanie
-        Height: =Parent.Height - EditForm5.Y
+        Height: =1030
         Item: =Defaults(Zadanie_1)
         Width: =Parent.Width
-        Y: =RectQuickActionBar8.Height
+        Y: =106
         ZIndex: =5
 
         "'Opis zadania_DataCard3' As typedDataCard.textualEditCard":
@@ -412,6 +415,6 @@
         OnSelect: =Back()
         Width: =88
         X: =552
-        Y: =8
+        Y: =17
         ZIndex: =6
 
