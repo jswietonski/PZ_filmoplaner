@@ -159,10 +159,10 @@ Spotkania_wyswietl_szczegoly As screen:
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Height: =70
-                Items: =Choices([@Spotkanie].ID_film1)
+                Items: =Choices([@Spotkanie].Film)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices(Spotkanie.ID_film1,DataCardValue4.SearchText)
+                SearchItems: =Choices(Spotkanie.Film,DataCardValue4.SearchText)
                 SelectMultiple: =false
                 Size: =21
                 Width: =Parent.Width - 60
