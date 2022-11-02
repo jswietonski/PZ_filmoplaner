@@ -1,0 +1,74 @@
+{
+  "2c465da7-916c-4257-a26d-737ff2848444": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1607/1.0.1607.3068/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://studentwat.sharepoint.com/sites/Filmoplaner": {
+        "dataSources": {
+          "Film_1": {
+            "tableName": "f93772c8-090c-4732-8c0a-9aeda5450d28"
+          },
+          "Gatunki filmów": {
+            "tableName": "c8ae458c-5de9-44c0-b82b-e3cc8bcec2a7"
+          },
+          "Gatunki filmów_1": {
+            "tableName": "c8ae458c-5de9-44c0-b82b-e3cc8bcec2a7"
+          },
+          "Lokalizacja": {
+            "tableName": "714c2c97-ca2c-454d-b8f9-0c751a256b15"
+          },
+          "Menedżer": {
+            "tableName": "b7a419b3-457a-46af-8b26-df78c243080a"
+          },
+          "Pracownik": {
+            "tableName": "51480b03-8cdb-4836-b2e1-edd524c87d36"
+          },
+          "Pracownik_1": {
+            "tableName": "51480b03-8cdb-4836-b2e1-edd524c87d36"
+          },
+          "Pracownik_2": {
+            "tableName": "51480b03-8cdb-4836-b2e1-edd524c87d36"
+          },
+          "Skład zespołu": {
+            "tableName": "0ad9b334-e4a6-4ee9-a903-e0c9588333f1"
+          },
+          "Spotkanie": {
+            "tableName": "a0337286-ab34-47a0-a4e1-825d4ca5213d"
+          },
+          "Zadanie": {
+            "tableName": "e754c807-8fbc-4fc4-8376-4d4dbefa5e0b"
+          },
+          "Zadanie_1": {
+            "tableName": "e754c807-8fbc-4fc4-8376-4d4dbefa5e0b"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Zadanie",
+      "Gatunki filmów",
+      "Pracownik_1",
+      "Film_1",
+      "Gatunki filmów_1",
+      "Lokalizacja",
+      "Menedżer",
+      "Pracownik_2",
+      "Skład zespołu",
+      "Zadanie_1",
+      "Spotkanie",
+      "Pracownik"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "2c465da7-916c-4257-a26d-737ff2848444"
+  }
+}

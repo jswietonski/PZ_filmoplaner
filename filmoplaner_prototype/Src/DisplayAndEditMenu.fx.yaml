@@ -1,0 +1,94 @@
+DisplayAndEditMenu As screen:
+    Fill: =RGBA(204, 231, 246, 1)
+
+    RectQuickActionBar5_2 As rectangle:
+        Height: =106
+        Width: =Parent.Width
+        ZIndex: =1
+
+    Button3 As button:
+        Height: =70
+        OnSelect: =Navigate(Pracownik_wyswietl)
+        Size: =24
+        Text: ="Pracownicy"
+        Width: =640
+        Y: =192
+        ZIndex: =2
+
+    Button3_1 As button:
+        Height: =70
+        Size: =24
+        Text: ="Gatunki filmów"
+        Width: =640
+        Y: =292
+        ZIndex: =3
+
+    Button3_2 As button:
+        Height: =70
+        Size: =24
+        Text: ="Spotkania"
+        Width: =640
+        Y: =387
+        ZIndex: =4
+
+    Button3_3 As button:
+        Height: =70
+        Size: =24
+        Text: ="Zadania"
+        Width: =640
+        Y: =482
+        ZIndex: =5
+
+    Button3_4 As button:
+        Height: =70
+        Size: =24
+        Text: ="Menedżerowie"
+        Width: =640
+        Y: =582
+        ZIndex: =6
+
+    Button3_5 As button:
+        Height: =70
+        Size: =24
+        Text: ="Lokalizacje"
+        Width: =640
+        Y: =677
+        ZIndex: =7
+
+    Button3_6 As button:
+        Height: =70
+        Size: =24
+        Text: ="Filmy"
+        Width: =640
+        Y: =772
+        ZIndex: =8
+
+    Icon1_8 As icon.Undo:
+        Height: =71
+        Icon: =Icon.Undo
+        OnSelect: =Back()
+        Width: =88
+        X: =552
+        Y: =17
+        ZIndex: =9
+
+    Label3 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =106
+        Size: =30
+        Text: ="Wyświetl listę..."
+        Width: =560
+        ZIndex: =10
+
+    Label4 As label:
+        Align: =Align.Center
+        Height: =90
+        Size: =23
+        Text: |-
+            ="Podpowiedź: po wyświetleniu listy możesz edytować jej poszczególne elementy!"
+        Width: =640
+        Y: =1046
+        ZIndex: =11
+

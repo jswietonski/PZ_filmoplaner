@@ -1,0 +1,95 @@
+"CreateMenu As screen.'phoneBrowseLayout_ver3.0'":
+    Fill: =RGBA(204, 231, 246, 1)
+
+    LblAppName1 As label:
+        Fill: =RGBA(58, 58, 58, 0)
+        Height: =88
+        Size: =27
+        Text: ="Co chcesz zrobić?"
+        Width: =
+        Wrap: =false
+        X: =20
+        ZIndex: =2
+
+    Button1 As button:
+        Height: =70
+        OnSelect: =Navigate('Dodaj pracownika')
+        Size: =24
+        Text: ="pracownika"
+        Width: =640
+        Y: =229
+        ZIndex: =9
+
+    Button1_1 As button:
+        Height: =70
+        OnSelect: =Navigate('Dodaj gatunek')
+        Size: =24
+        Text: ="gatunek filmowy"
+        Width: =640
+        Y: =329
+        ZIndex: =10
+
+    Button1_2 As button:
+        Height: =70
+        OnSelect: =Navigate('Nowe spotkanie')
+        Size: =24
+        Text: ="spotkanie"
+        Width: =640
+        Y: =428
+        ZIndex: =11
+
+    Button1_3 As button:
+        Height: =70
+        OnSelect: =Navigate('Nowe zadanie')
+        Size: =24
+        Text: ="zadanie"
+        Width: =640
+        Y: =527
+        ZIndex: =12
+
+    Button1_4 As button:
+        Height: =70
+        OnSelect: =Navigate('Dodaj menadzera')
+        Size: =24
+        Text: ="menedżera"
+        Width: =640
+        Y: =621
+        ZIndex: =13
+
+    Button1_5 As button:
+        Height: =70
+        OnSelect: =Navigate('Dodaj lokalizacje')
+        Size: =24
+        Text: ="lokalizację"
+        Width: =640
+        Y: =714
+        ZIndex: =14
+
+    Button1_6 As button:
+        Height: =70
+        OnSelect: =Navigate('Dodaj film')
+        Size: =24
+        Text: ="film"
+        Width: =640
+        Y: =813
+        ZIndex: =15
+
+    Label1 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        Size: =30
+        Text: ="Dodaj..."
+        Width: =560
+        Y: =6
+        ZIndex: =16
+
+    Icon1_7 As icon.Undo:
+        Height: =71
+        Icon: =Icon.Undo
+        OnSelect: =Back()
+        Width: =88
+        X: =552
+        Y: =6
+        ZIndex: =17
+

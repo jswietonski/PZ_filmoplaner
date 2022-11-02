@@ -1,0 +1,49 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+    "CdpRevision": {
+      "BaseUrl": "/",
+      "LastChangedTimeString": "2022-10-24T18:13:10.2480000Z",
+      "RevisionNumber": 1
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "{Attachments}": "Załączniki",
+      "{Attachments}@odata.type": "{Attachments} ({Attachments}@odata.type)",
+      "{FilenameWithExtension}": "Nazwa pliku z rozszerzeniem",
+      "{FullPath}": "Pełna ścieżka",
+      "{HasAttachments}": "Ma załączniki",
+      "{Identifier}": "Identyfikator ({Identifier})",
+      "{IsFolder}": "JestFolderem",
+      "{Link}": "Link do elementu",
+      "{ModerationComment}": "Komentarze skojarzone z zatwierdzaniem zawartości tego elementu listy",
+      "{ModerationStatus}": "Stan zatwierdzania zawartości",
+      "{Name}": "Nazwa",
+      "{Path}": "Ścieżka folderu",
+      "{Thumbnail}": "Miniatura",
+      "{TriggerWindowEndToken}": "Token końca przedziału czasu",
+      "{TriggerWindowStartToken}": "Token początku przedziału czasu",
+      "{VersionNumber}": "Numer wersji",
+      "Author": "Utworzone przez",
+      "Author#Claims": "Utworzone przez Claims",
+      "ComplianceAssetId": "Identyfikator elementu zawartości zgodności",
+      "Created": "Utworzony",
+      "Editor": "Zmodyfikowane przez",
+      "Editor#Claims": "Zmodyfikowane przez Claims",
+      "field_2": "nazwisko ",
+      "field_3": "numer_telefonu",
+      "field_4": "email",
+      "field_5": "data_urodzenia",
+      "field_6": "data_zatrudnienia",
+      "field_7": "wynagrodzenie ",
+      "ID": "Identyfikator (ID)",
+      "Modified": "Zmodyfikowane",
+      "Title": "imie "
+    },
+    "DatasetName": "https://studentwat.sharepoint.com/sites/Filmoplaner",
+    "EncodeDataset": true,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "Menedżer",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]

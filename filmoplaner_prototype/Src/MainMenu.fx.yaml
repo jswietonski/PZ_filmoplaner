@@ -1,0 +1,54 @@
+MainMenu As screen:
+    Fill: =RGBA(204, 231, 246, 1)
+
+    RectQuickActionBar5_1 As rectangle:
+        Height: =106
+        Width: =Parent.Width
+        ZIndex: =1
+
+    Button2 As button:
+        Height: =70
+        OnSelect: =Navigate(CreateMenu)
+        Size: =24
+        Text: ="Dodaj element do listy"
+        Width: =640
+        Y: =340
+        ZIndex: =2
+
+    Button2_1 As button:
+        Height: =70
+        Size: =24
+        Text: ="Usuń element z listy"
+        Width: =640
+        Y: =480
+        ZIndex: =3
+
+    Button2_3 As button:
+        Height: =70
+        OnSelect: =Navigate(DisplayAndEditMenu)
+        Size: =24
+        Text: ="Wyświetl i edytuj listy"
+        Width: =640
+        Y: =200
+        ZIndex: =4
+
+    Label2 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =105
+        Size: =30
+        Text: ="Witaj w aplikacji Filmoplaner!"
+        Width: =640
+        Y: =1
+        ZIndex: =5
+
+    Image1 As image:
+        Height: =567
+        Image: =filmoplanerbackground
+        ImagePosition: =ImagePosition.Fill
+        Width: =621
+        X: =9
+        Y: =567
+        ZIndex: =6
+
