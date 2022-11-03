@@ -1,64 +1,62 @@
-"Pracownicy_usun As screen.'phoneLayout_HeaderAndGallery_ver3.0'":
+"Gatunki_usun As screen.'phoneLayout_HeaderAndGallery_ver3.0'":
     Fill: =RGBA(204, 231, 246, 1)
 
-    RectQuickActionBar5_33 As rectangle:
+    RectQuickActionBar5_34 As rectangle:
         Height: =106
         Width: =Parent.Width
         ZIndex: =1
 
-    "BrowseGallery1_8 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
-        Height: =Parent.Height - BrowseGallery1_8.Y
-        Items: =Pracownik_1
+    "BrowseGallery1_9 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
+        Height: =Parent.Height - BrowseGallery1_9.Y
+        Items: ='Gatunki filmów_1'
         Layout: =Layout.Vertical
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =Min(96, Self.Height - 60)
         Width: =Parent.Width
-        Y: =TextSearchBox1_8.Y + TextSearchBox1_8.Height
+        Y: =TextSearchBox1_9.Y + TextSearchBox1_9.Height
         ZIndex: =2
 
-        Title6_8 As label:
+        Title6_9 As label:
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.Imię&" "&ThisItem.Nazwisko
+            Text: =ThisItem.'Nazwa Gatunku'
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
             X: =32
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =1
 
-        Separator7_8 As rectangle:
+        Separator7_9 As rectangle:
             Height: =1
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
             Y: =Parent.TemplateHeight - 1
             ZIndex: =3
 
-        Icon2 As icon.Trash:
+        Icon4 As icon.Trash:
             Icon: =Icon.Trash
-            OnSelect: =Remove(Pracownik_1,BrowseGallery1_8.Selected)
-            X: =557
+            OnSelect: =Remove('Gatunki filmów_1',BrowseGallery1_9.Selected)
+            X: =568
             Y: =16
             ZIndex: =4
 
-    LblAppName2_8 As label:
+    LblAppName2_9 As label:
         Align: =Align.Center
         FontWeight: =FontWeight.Semibold
         Height: =106
         Size: =30
-        Text: |-
-            ="Pracownicy
-            "
+        Text: ="Gatunki filmowe"
         Width: =376
         Wrap: =false
         ZIndex: =4
 
-    IconRefresh1_8 As icon.Reload:
-        AccessibleLabel: =IconRefresh1_8.Tooltip
+    IconRefresh1_9 As icon.Reload:
+        AccessibleLabel: =IconRefresh1_9.Tooltip
         Height: =88
         Icon: =Icon.Reload
         PaddingBottom: =22
@@ -72,8 +70,8 @@
         Y: =9
         ZIndex: =5
 
-    IconSortUpDown1_8 As icon.ArrowsUpDown:
-        AccessibleLabel: =IconSortUpDown1_8.Tooltip
+    IconSortUpDown1_9 As icon.ArrowsUpDown:
+        AccessibleLabel: =IconSortUpDown1_9.Tooltip
         Height: =88
         Icon: =Icon.Sort
         OnSelect: |-
@@ -89,7 +87,7 @@
         Y: =9
         ZIndex: =6
 
-    TextSearchBox1_8 As text:
+    TextSearchBox1_9 As text:
         Align: =Left
         Default: =""
         Height: =68
@@ -104,26 +102,26 @@
         Y: =106
         ZIndex: =7
 
-    SearchIcon1_8 As icon.Search:
-        Height: =SearchIcon1_8.Width
+    SearchIcon1_9 As icon.Search:
+        Height: =SearchIcon1_9.Width
         Icon: =Icon.Search
         PaddingBottom: =14
         PaddingLeft: =14
         PaddingRight: =14
         PaddingTop: =14
         Tooltip: ="Wyszukaj"
-        Width: =TextSearchBox1_8.Height
-        X: =TextSearchBox1_8.X
-        Y: =TextSearchBox1_8.Y
+        Width: =TextSearchBox1_9.Height
+        X: =TextSearchBox1_9.X
+        Y: =TextSearchBox1_9.Y
         ZIndex: =8
 
-    Rectangle12_8 As rectangle:
+    Rectangle12_9 As rectangle:
         Height: =2
         Width: =Parent.Width
-        Y: =TextSearchBox1_8.Y + TextSearchBox1_8.Height
+        Y: =TextSearchBox1_9.Y + TextSearchBox1_9.Height
         ZIndex: =9
 
-    Icon1_30 As icon.Undo:
+    Icon1_31 As icon.Undo:
         Height: =71
         Icon: =Icon.Undo
         OnSelect: =Back()

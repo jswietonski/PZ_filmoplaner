@@ -17,7 +17,7 @@ DisplayAndDeleteMenu As screen:
 
     Button3_8 As button:
         Height: =70
-        OnSelect: =Navigate(Gatunki_wyswietl)
+        OnSelect: =Navigate(Gatunki_usun)
         Size: =24
         Text: ="Gatunki filmów"
         Width: =640
@@ -26,7 +26,7 @@ DisplayAndDeleteMenu As screen:
 
     Button3_9 As button:
         Height: =70
-        OnSelect: =Navigate(Spotkania_wyswietl)
+        OnSelect: =Navigate(Spotkania_usun)
         Size: =24
         Text: ="Spotkania"
         Width: =640
@@ -35,7 +35,7 @@ DisplayAndDeleteMenu As screen:
 
     Button3_10 As button:
         Height: =70
-        OnSelect: =Navigate(Zadania_wyswietl)
+        OnSelect: =Navigate(Zadania_usun)
         Size: =24
         Text: ="Zadania"
         Width: =640
@@ -44,7 +44,7 @@ DisplayAndDeleteMenu As screen:
 
     Button3_11 As button:
         Height: =70
-        OnSelect: =Navigate(Menedzerowie_wyswietl)
+        OnSelect: =Navigate(Menedzerowie_usun)
         Size: =24
         Text: ="Menedżerowie"
         Width: =640
@@ -53,7 +53,7 @@ DisplayAndDeleteMenu As screen:
 
     Button3_12 As button:
         Height: =70
-        OnSelect: =Navigate(Lokalizacje_wyswietl)
+        OnSelect: =Navigate(Lokalizacje_usun)
         Size: =24
         Text: ="Lokalizacje"
         Width: =640
@@ -62,7 +62,7 @@ DisplayAndDeleteMenu As screen:
 
     Button3_13 As button:
         Height: =70
-        OnSelect: =Navigate(Filmy_wyswietl)
+        OnSelect: =Navigate(Filmy_usun)
         Size: =24
         Text: ="Filmy"
         Width: =640
