@@ -8,7 +8,7 @@
 
     "BrowseGallery1_1 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
         Height: =Parent.Height - BrowseGallery1_1.Y
-        Items: ='Gatunki filmów_1'
+        Items: =If(SortDescending2,Sort('Gatunki filmów_1','Nazwa Gatunku',Descending),(If(!SortDescending2,Sort('Gatunki filmów_1','Nazwa Gatunku',Ascending))))
         Layout: =Layout.Vertical
         ShowScrollbar: =false
         TemplatePadding: =0
@@ -75,13 +75,13 @@
         Height: =88
         Icon: =Icon.Sort
         OnSelect: |-
-            =UpdateContext({SortDescending1: !SortDescending1})
+            =UpdateContext({SortDescending2: !SortDescending2})
         PaddingBottom: =26
         PaddingLeft: =26
         PaddingRight: =26
         PaddingTop: =26
         TabIndex: =0
-        Tooltip: =If(SortDescending1, "Sortuj listę w odwrotnej kolejności alfabetycznej", "Sortuj listę w kolejności alfabetycznej")
+        Tooltip: =
         Width: =88
         X: =464
         Y: =9

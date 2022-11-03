@@ -8,7 +8,7 @@
 
     "BrowseGallery1_2 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
         Height: =Parent.Height - BrowseGallery1_2.Y
-        Items: =Spotkanie
+        Items: =If(SortDescending1,Sort(Spotkanie,'Data Rozpoczęcia',Descending),(If(!SortDescending1,Sort(Spotkanie,'Data Rozpoczęcia',Ascending))))
         Layout: =Layout.Vertical
         ShowScrollbar: =false
         TemplatePadding: =0
