@@ -762,14 +762,7 @@
     "IconSortUpDown1_7": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Tooltip",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Tooltip",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,

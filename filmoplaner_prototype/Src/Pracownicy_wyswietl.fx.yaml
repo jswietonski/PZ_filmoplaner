@@ -8,7 +8,7 @@
 
     "BrowseGallery1_7 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
         Height: =Parent.Height - BrowseGallery1_7.Y
-        Items: =Pracownik_1
+        Items: =If(SortDescending1,Sort(Pracownik_1,'Imię',Descending),(If(!SortDescending1,Sort(Pracownik_1,'Imię',Ascending))))
         Layout: =Layout.Vertical
         ShowScrollbar: =false
         TemplatePadding: =0
@@ -99,7 +99,7 @@
         PaddingRight: =26
         PaddingTop: =26
         TabIndex: =0
-        Tooltip: =If(SortDescending1, "Sortuj listę w odwrotnej kolejności alfabetycznej", "Sortuj listę w kolejności alfabetycznej")
+        Tooltip: =
         Width: =88
         X: =464
         Y: =9
