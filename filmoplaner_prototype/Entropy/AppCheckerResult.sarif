@@ -5204,49 +5204,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pracownicy_usun.BrowseGallery1_8.Icon4_8.AccessibleLabel"
+                  "fullyQualifiedName": "Pracownicy_usun.BrowseGallery1_8.Icon2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pracownicy_usun.BrowseGallery1_8.Icon4_8.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Pracownicy_usun",
-                "type": "Pracownicy_usun.BrowseGallery1_8.Icon4_8"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pracownicy_usun.BrowseGallery1_8.Icon4_8.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pracownicy_usun.BrowseGallery1_8.Icon4_8.TabIndex",
+                  "fullyQualifiedName": "Pracownicy_usun.BrowseGallery1_8.Icon2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pracownicy_usun",
-                "type": "Pracownicy_usun.BrowseGallery1_8.Icon4_8"
+                "type": "Pracownicy_usun.BrowseGallery1_8.Icon2"
               }
             }
           ],
@@ -5258,6 +5228,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pracownicy_usun.BrowseGallery1_8.Icon2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pracownicy_usun.BrowseGallery1_8.Icon2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Pracownicy_usun",
+                "type": "Pracownicy_usun.BrowseGallery1_8.Icon2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
         },
         {
           "locations": [

@@ -31,22 +31,6 @@
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =1
 
-        NextArrow6_8 As icon.ChevronRight:
-            AccessibleLabel: =Self.Tooltip
-            Height: =60
-            Icon: =Icon.ChevronRight
-            OnSelect: = Navigate(Pracownicy_wyswietl_szczegoly)
-            PaddingBottom: =10
-            PaddingLeft: =10
-            PaddingRight: =10
-            PaddingTop: =10
-            TabIndex: =0
-            Tooltip: ="Wyświetl szczegóły elementu"
-            Width: =60
-            X: =Parent.TemplateWidth - Self.Width - 5
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-            ZIndex: =2
-
         Separator7_8 As rectangle:
             Height: =1
             OnSelect: =Select(Parent)
@@ -54,11 +38,11 @@
             Y: =Parent.TemplateHeight - 1
             ZIndex: =3
 
-        Icon4_8 As icon.Edit:
-            Icon: =Icon.Edit
-            OnSelect: =Navigate(EdytujPracownika)
-            X: =504
-            Y: =14
+        Icon2 As icon.Trash:
+            Icon: =Icon.Trash
+            OnSelect: =Remove(Pracownik_1,BrowseGallery1_8.Selected)
+            X: =557
+            Y: =16
             ZIndex: =4
 
     LblAppName2_8 As label:
