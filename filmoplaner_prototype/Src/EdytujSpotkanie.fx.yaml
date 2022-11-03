@@ -343,10 +343,10 @@
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Height: =70
-                Items: =Choices([@Spotkanie].ID_film1)
+                Items: =Choices([@Spotkanie].Film)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices(Spotkanie.ID_film1,DataCardValue77.SearchText)
+                SearchItems: =Choices(Spotkanie.Film,DataCardValue77.SearchText)
                 SelectMultiple: =false
                 Size: =21
                 Tooltip: =Parent.DisplayName

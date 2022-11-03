@@ -192,10 +192,10 @@ Zadania_wyswietl_szczegoly As screen:
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Height: =70
-                Items: =Choices([@Zadanie].Mened_x017c_er)
+                Items: =Choices([@Zadanie].Menedżer)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices(Zadanie.Mened_x017c_er,DataCardValue48.SearchText)
+                SearchItems: =Choices(Zadanie.Menedżer,DataCardValue48.SearchText)
                 SelectMultiple: =false
                 Size: =21
                 Width: =550
