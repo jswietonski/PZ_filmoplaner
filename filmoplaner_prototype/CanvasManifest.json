@@ -111,6 +111,7 @@
     "MainMenu",
     "DisplayAndEditMenu",
     "Pracownicy_wyswietl",
+    "Pracownicy_usun",
     "Gatunki_wyswietl",
     "Spotkania_wyswietl",
     "Zadania_wyswietl",
@@ -137,6 +138,7 @@
     "Dodaj zadanie",
     "Dodaj menadzera",
     "Dodaj lokalizacje",
-    "Dodaj film"
+    "Dodaj film",
+    "DisplayAndDeleteMenu"
   ]
 }
