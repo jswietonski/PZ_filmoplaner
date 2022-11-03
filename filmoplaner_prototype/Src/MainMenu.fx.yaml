@@ -17,6 +17,7 @@ MainMenu As screen:
 
     Button2_1 As button:
         Height: =70
+        OnSelect: =Navigate(DisplayAndDeleteMenu)
         Size: =24
         Text: ="Usuń element z listy"
         Width: =640
