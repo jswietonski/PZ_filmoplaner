@@ -39,7 +39,7 @@
 
     EditForm9_5 As form:
         DataSource: =Lokalizacja
-        Height: =1030
+        Height: =492
         Item: =BrowseGallery1_5.Selected
         Width: =Parent.Width
         Y: =106
@@ -69,7 +69,7 @@
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
-                Y: =10
+                Y: =3
                 ZIndex: =1
 
             DataCardValue6 As text:
@@ -142,7 +142,7 @@
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
-                Y: =10
+                Y: =15
                 ZIndex: =1
 
             DataCardValue21 As text:
@@ -272,4 +272,21 @@
         X: =540
         Y: =17
         ZIndex: =6
+
+    "Map3 As 'Mapa (wersja zapoznawcza)'.pcfdataset":
+        BorderColor: =RGBA(0, 18, 107, 1)
+        CurrentLocation: =true
+        CurrentLocationLatitude: |
+            =DataCardValue6
+        CurrentLocationLongitude: =DataCardValue21
+        DefaultLatitude: =
+        DefaultLocation: =false
+        DefaultLongitude: =
+        DisplayMode: =DisplayMode.Edit
+        Height: =538
+        PinColor: =RGBA(29, 114, 169, 1)
+        Width: =640
+        X: =0
+        Y: =598
+        ZIndex: =7
 

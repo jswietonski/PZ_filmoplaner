@@ -156,6 +156,7 @@
         ItemsLatitudes: ="Latitiude" 
         ItemsLongitudes: ="Longitude"
         PinColor: =RGBA(29, 114, 169, 1)
+        Pitch: =false
         SatelliteView: =Toggle_satelite.Value
         Width: =640
         X: =0

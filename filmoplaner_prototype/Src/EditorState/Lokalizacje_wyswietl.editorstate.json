@@ -1594,6 +1594,14 @@
           "InvariantPropertyName": "SatelliteView",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "true",
+          "InvariantPropertyName": "Pitch",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
         }
       ],
       "HasDynamicProperties": false,
@@ -1607,9 +1615,6 @@
       "MetaDataIDKey": "",
       "Name": "Map1",
       "ParentIndex": 9,
-      "PcfServiceDependencies": [
-        "SpatialServices"
-      ],
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1645,6 +1650,11 @@
         {
           "Category": "Data",
           "PropertyName": "SatelliteView",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "Pitch",
           "RuleProviderType": "Unknown"
         },
         {
