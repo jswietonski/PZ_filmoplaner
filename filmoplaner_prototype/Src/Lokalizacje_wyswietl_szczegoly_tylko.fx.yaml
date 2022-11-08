@@ -8,7 +8,7 @@ Lokalizacje_wyswietl_szczegoly_tylko As screen:
 
     FormViewer2_14 As formViewer:
         DataSource: =Lokalizacja
-        Height: =1029
+        Height: =1030
         Item: =BrowseGallery1_23.Selected
         Width: =640
         Y: =106
@@ -135,7 +135,7 @@ Lokalizacje_wyswietl_szczegoly_tylko As screen:
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@Lokalizacja],DataSourceInfo.DisplayName,"Title")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
+            Height: =113
             Required: =false
             Width: =640
             X: =0
@@ -173,7 +173,7 @@ Lokalizacje_wyswietl_szczegoly_tylko As screen:
         Width: =88
         X: =552
         Y: =17
-        ZIndex: =3
+        ZIndex: =4
 
     Label5_14 As label:
         Align: =Align.Center
@@ -184,5 +184,65 @@ Lokalizacje_wyswietl_szczegoly_tylko As screen:
         Text: |-
             ="Lokalizacja:"
         Width: =560
-        ZIndex: =4
+        ZIndex: =5
+
+    "Map5 As 'Mapa (wersja zapoznawcza)'.pcfdataset":
+        BorderColor: =RGBA(0, 18, 107, 1)
+        CurrentLocation: =true
+        CurrentLocationLatitude: =
+        CurrentLocationLongitude: =
+        DefaultLatitude: =DataCardValue150.Text
+        DefaultLocation: =true
+        DefaultLongitude: =DataCardValue151.Text
+        DisplayMode: =DisplayMode.Edit
+        Height: =400
+        Items: =
+        ItemsAddresses: =
+        ItemsLatitudes: =
+        ItemsLongitudes: =
+        PinColor: =RGBA(29, 114, 169, 1)
+        Width: =400
+        X: =80
+        Y: =678
+        ZIndex: =6
+
+        Lokalizacja3 As pcfDataField.textualColumn:
+            FieldDisplayName: ="Lokalizacja"
+            FieldName: ="Title"
+            FieldType: ="s"
+            FieldVariantName: ="textualColumn"
+            Order: =1
+            ZIndex: =4
+
+        "'Latitude (szerokość geograficzna)2' As pcfDataField.textualColumn":
+            FieldDisplayName: ="Latitude (szerokość geograficzna)"
+            FieldName: ="Latitiude"
+            FieldType: ="s"
+            FieldVariantName: ="textualColumn"
+            Order: =2
+            ZIndex: =5
+
+        "'Longitude (wysokość geograficzna)2' As pcfDataField.textualColumn":
+            FieldDisplayName: ="Longitude (wysokość geograficzna)"
+            FieldName: ="Longitude"
+            FieldType: ="s"
+            FieldVariantName: ="textualColumn"
+            Order: =3
+            ZIndex: =6
+
+        Powierzchnia2 As pcfDataField.textualColumn:
+            FieldDisplayName: ="Powierzchnia"
+            FieldName: ="Powierzchnia"
+            FieldType: ="n"
+            FieldVariantName: ="textualColumn"
+            Order: =4
+            ZIndex: =7
+
+        Załączniki3 As pcfDataField.textualColumn:
+            FieldDisplayName: ="Załączniki"
+            FieldName: ="{Attachments}"
+            FieldType: ="r*"
+            FieldVariantName: ="textualColumn"
+            Order: =5
+            ZIndex: =8
 
