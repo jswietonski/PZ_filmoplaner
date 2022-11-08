@@ -1,0 +1,63 @@
+DisplayAndEditMenuAktor As screen:
+    Fill: =RGBA(204, 231, 246, 1)
+
+    RectQuickActionBar5_54 As rectangle:
+        Height: =106
+        Width: =Parent.Width
+        ZIndex: =1
+
+    Button3_16 As button:
+        Height: =70
+        OnSelect: =Navigate(Spotkania_wyswietl)
+        Size: =24
+        Text: ="Spotkania"
+        Width: =640
+        Y: =292
+        ZIndex: =4
+
+    Button3_18 As button:
+        Height: =70
+        OnSelect: =Navigate(Menedzerowie_wyswietl)
+        Size: =24
+        Text: ="Menedżerowie"
+        Width: =640
+        Y: =192
+        ZIndex: =6
+
+    Button3_19 As button:
+        Height: =70
+        OnSelect: =Navigate(Lokalizacje_wyswietl)
+        Size: =24
+        Text: ="Lokalizacje"
+        Width: =640
+        Y: =392
+        ZIndex: =7
+
+    Button3_20 As button:
+        Height: =70
+        OnSelect: =Navigate(Filmy_wyswietl)
+        Size: =24
+        Text: ="Filmy"
+        Width: =640
+        Y: =492
+        ZIndex: =8
+
+    Icon1_49 As icon.Undo:
+        Height: =71
+        Icon: =Icon.Undo
+        OnSelect: =Back()
+        Width: =88
+        X: =552
+        Y: =17
+        ZIndex: =9
+
+    Label3_2 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =106
+        Size: =30
+        Text: ="Wyświetl listę..."
+        Width: =560
+        ZIndex: =10
+

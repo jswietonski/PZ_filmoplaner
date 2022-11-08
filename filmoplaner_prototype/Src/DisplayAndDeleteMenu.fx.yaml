@@ -12,7 +12,7 @@ DisplayAndDeleteMenu As screen:
         Size: =24
         Text: ="Pracownicy"
         Width: =640
-        Y: =192
+        Y: =150
         ZIndex: =2
 
     Button3_8 As button:
@@ -21,7 +21,7 @@ DisplayAndDeleteMenu As screen:
         Size: =24
         Text: ="Gatunki filmów"
         Width: =640
-        Y: =292
+        Y: =230
         ZIndex: =3
 
     Button3_9 As button:
@@ -30,7 +30,7 @@ DisplayAndDeleteMenu As screen:
         Size: =24
         Text: ="Spotkania"
         Width: =640
-        Y: =387
+        Y: =310
         ZIndex: =4
 
     Button3_10 As button:
@@ -39,7 +39,7 @@ DisplayAndDeleteMenu As screen:
         Size: =24
         Text: ="Zadania"
         Width: =640
-        Y: =482
+        Y: =390
         ZIndex: =5
 
     Button3_11 As button:
@@ -48,7 +48,7 @@ DisplayAndDeleteMenu As screen:
         Size: =24
         Text: ="Menedżerowie"
         Width: =640
-        Y: =582
+        Y: =470
         ZIndex: =6
 
     Button3_12 As button:
@@ -57,7 +57,7 @@ DisplayAndDeleteMenu As screen:
         Size: =24
         Text: ="Lokalizacje"
         Width: =640
-        Y: =677
+        Y: =550
         ZIndex: =7
 
     Button3_13 As button:
@@ -66,7 +66,7 @@ DisplayAndDeleteMenu As screen:
         Size: =24
         Text: ="Filmy"
         Width: =640
-        Y: =772
+        Y: =630
         ZIndex: =8
 
     Icon1_9 As icon.Undo:
@@ -97,4 +97,31 @@ DisplayAndDeleteMenu As screen:
         Width: =640
         Y: =1006
         ZIndex: =11
+
+    Button3_21 As button:
+        Height: =70
+        OnSelect: =Navigate(Aktorzy_usun)
+        Size: =24
+        Text: ="Aktorzy"
+        Width: =640
+        Y: =710
+        ZIndex: =12
+
+    Button3_22 As button:
+        Height: =70
+        OnSelect: =Navigate(Role_usun)
+        Size: =24
+        Text: ="Role"
+        Width: =640
+        Y: =790
+        ZIndex: =13
+
+    Button3_23 As button:
+        Height: =70
+        OnSelect: =Navigate(Kosztorys_usun)
+        Size: =24
+        Text: ="Kosztorysy"
+        Width: =640
+        Y: =870
+        ZIndex: =14
 

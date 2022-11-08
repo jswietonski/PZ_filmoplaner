@@ -22,7 +22,7 @@
         Size: =24
         Text: ="pracownika"
         Width: =640
-        Y: =229
+        Y: =150
         ZIndex: =3
 
     Button1_1 As button:
@@ -31,7 +31,7 @@
         Size: =24
         Text: ="gatunek filmowy"
         Width: =640
-        Y: =329
+        Y: =230
         ZIndex: =4
 
     Button1_2 As button:
@@ -40,7 +40,7 @@
         Size: =24
         Text: ="spotkanie"
         Width: =640
-        Y: =428
+        Y: =310
         ZIndex: =5
 
     Button1_3 As button:
@@ -49,7 +49,7 @@
         Size: =24
         Text: ="zadanie"
         Width: =640
-        Y: =527
+        Y: =390
         ZIndex: =6
 
     Button1_4 As button:
@@ -58,7 +58,7 @@
         Size: =24
         Text: ="menedżera"
         Width: =640
-        Y: =621
+        Y: =470
         ZIndex: =7
 
     Button1_5 As button:
@@ -67,7 +67,7 @@
         Size: =24
         Text: ="lokalizację"
         Width: =640
-        Y: =714
+        Y: =550
         ZIndex: =8
 
     Button1_6 As button:
@@ -76,7 +76,7 @@
         Size: =24
         Text: ="film"
         Width: =640
-        Y: =813
+        Y: =630
         ZIndex: =9
 
     Label1 As label:
@@ -97,4 +97,31 @@
         X: =552
         Y: =17
         ZIndex: =11
+
+    Button1_7 As button:
+        Height: =70
+        OnSelect: =Navigate('Dodaj aktora')
+        Size: =24
+        Text: ="aktora"
+        Width: =640
+        Y: =710
+        ZIndex: =12
+
+    Button1_8 As button:
+        Height: =70
+        OnSelect: =Navigate('Dodaj rolę')
+        Size: =24
+        Text: ="rolę"
+        Width: =640
+        Y: =790
+        ZIndex: =13
+
+    Button1_9 As button:
+        Height: =70
+        OnSelect: =Navigate('Dodaj kosztorys')
+        Size: =24
+        Text: ="kosztorys"
+        Width: =640
+        Y: =870
+        ZIndex: =14
 

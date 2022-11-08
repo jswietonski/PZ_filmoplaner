@@ -115,6 +115,7 @@
     "MainMenuPracownik",
     "MainMenuAktor",
     "DisplayAndEditMenu",
+    "DisplayAndEditMenuAktor",
     "Pracownicy_wyswietl",
     "Pracownicy_usun",
     "Gatunki_wyswietl",
@@ -162,6 +163,9 @@
     "Dodaj menadzera",
     "Dodaj lokalizacje",
     "Dodaj film",
+    "Dodaj aktora",
+    "Dodaj rolę",
+    "Dodaj kosztorys",
     "DisplayAndDeleteMenu"
   ]
 }

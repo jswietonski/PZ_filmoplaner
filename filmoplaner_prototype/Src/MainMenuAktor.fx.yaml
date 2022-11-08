@@ -6,31 +6,15 @@ MainMenuAktor As screen:
         Width: =Parent.Width
         ZIndex: =1
 
-    Button2_10 As button:
-        Height: =70
-        OnSelect: =Navigate(CreateMenu)
-        Size: =24
-        Text: ="Dodaj element do listy"
-        Width: =640
-        Y: =340
-        ZIndex: =2
-
-    Button2_11 As button:
-        Height: =70
-        OnSelect: =Navigate(DisplayAndDeleteMenu)
-        Size: =24
-        Text: ="Usuń element z listy"
-        Width: =640
-        Y: =480
-        ZIndex: =3
-
     Button2_9 As button:
         Height: =70
-        OnSelect: =Navigate(DisplayAndEditMenu)
+        OnSelect: =Navigate(DisplayAndEditMenuAktor)
         Size: =24
-        Text: ="Wyświetl i edytuj listy"
+        Text: |-
+            ="Wyświetl dostępne listy
+            "
         Width: =640
-        Y: =200
+        Y: =340
         ZIndex: =4
 
     Label2_3 As label:
