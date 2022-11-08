@@ -1,12 +1,12 @@
-MainMenu As screen:
+MainMenuAktor As screen:
     Fill: =RGBA(204, 231, 246, 1)
 
-    RectQuickActionBar5_1 As rectangle:
+    RectQuickActionBar5_41 As rectangle:
         Height: =106
         Width: =Parent.Width
         ZIndex: =1
 
-    Button2 As button:
+    Button2_10 As button:
         Height: =70
         OnSelect: =Navigate(CreateMenu)
         Size: =24
@@ -15,7 +15,7 @@ MainMenu As screen:
         Y: =340
         ZIndex: =2
 
-    Button2_1 As button:
+    Button2_11 As button:
         Height: =70
         OnSelect: =Navigate(DisplayAndDeleteMenu)
         Size: =24
@@ -24,7 +24,7 @@ MainMenu As screen:
         Y: =480
         ZIndex: =3
 
-    Button2_3 As button:
+    Button2_9 As button:
         Height: =70
         OnSelect: =Navigate(DisplayAndEditMenu)
         Size: =24
@@ -33,7 +33,7 @@ MainMenu As screen:
         Y: =200
         ZIndex: =4
 
-    Label2 As label:
+    Label2_3 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Semibold
@@ -44,7 +44,7 @@ MainMenu As screen:
         Y: =1
         ZIndex: =5
 
-    Image1 As image:
+    Image1_3 As image:
         Height: =567
         Image: =filmoplanerbackground
         ImagePosition: =ImagePosition.Fill

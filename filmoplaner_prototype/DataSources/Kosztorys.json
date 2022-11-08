@@ -29,21 +29,20 @@
       "Created": "Utworzony",
       "Editor": "Zmodyfikowane przez",
       "Editor#Claims": "Zmodyfikowane przez Claims",
-      "field_2": "nazwisko ",
-      "field_3": "numer_telefonu",
-      "field_4": "email",
-      "field_5": "data_urodzenia",
-      "field_6": "data_zatrudnienia",
-      "field_7": "wynagrodzenie ",
+      "field_2": "Koszty produkcji",
+      "field_3": "Koszt postprodukcji",
+      "field_4": "Koszt marketingu",
+      "Film": "Film",
+      "Film#Id": "Film Id",
       "ID": "Identyfikator (ID)",
       "Modified": "Zmodyfikowane",
-      "Title": "imie "
+      "Title": "Koszt całkowity"
     },
     "DatasetName": "https://studentwat.sharepoint.com/sites/Filmoplaner",
     "EncodeDataset": true,
     "IsSampleData": false,
     "IsWritable": true,
-    "Name": "Menedżer",
+    "Name": "Kosztorys",
     "Type": "ConnectedDataSourceInfo"
   }
 ]

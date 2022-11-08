@@ -30,9 +30,10 @@
       "Editor": "Zmodyfikowane przez",
       "Editor#Claims": "Zmodyfikowane przez Claims",
       "ID": "Identyfikator (ID)",
-      "Latitiude": "Latitiude",
-      "Longitude": "Longitude",
+      "Latitiude": "Latitude (szerokość geograficzna)",
+      "Longitude": "Longitude (wysokość geograficzna)",
       "Modified": "Zmodyfikowane",
+      "Powierzchnia": "Powierzchnia",
       "Title": "Lokalizacja"
     },
     "DatasetName": "https://studentwat.sharepoint.com/sites/Filmoplaner",

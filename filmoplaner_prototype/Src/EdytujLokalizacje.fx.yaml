@@ -48,7 +48,7 @@
         Latitiude_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Latitiude"
-            Default: =ThisItem.Latitiude
+            Default: =ThisItem.'Latitude (szerokość geograficzna)'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@Lokalizacja],DataSourceInfo.DisplayName,"Latitiude")
             Fill: =RGBA(0, 0, 0, 0)
@@ -121,7 +121,7 @@
         Longitude_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Longitude"
-            Default: =ThisItem.Longitude
+            Default: =ThisItem.'Longitude (wysokość geograficzna)'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@Lokalizacja],DataSourceInfo.DisplayName,"Longitude")
             Fill: =RGBA(0, 0, 0, 0)

@@ -1,4 +1,21 @@
 {
+  "21d534b0-3a65-48dc-8cf2-2829afb87d2c": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "Spatial Services",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1601/1.0.1601.3047/microsoftspatialservices/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_microsoftspatialservices"
+    },
+    "datasets": {},
+    "dataSources": [
+      "SpatialServices"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "21d534b0-3a65-48dc-8cf2-2829afb87d2c"
+  },
   "2c465da7-916c-4257-a26d-737ff2848444": {
     "connectionParameters": {
       "sku": "Enterprise"
@@ -14,6 +31,9 @@
     "datasets": {
       "https://studentwat.sharepoint.com/sites/Filmoplaner": {
         "dataSources": {
+          "Aktor Filmowy": {
+            "tableName": "5b268e67-51f8-4743-bab9-5747d632b309"
+          },
           "Film_1": {
             "tableName": "f93772c8-090c-4732-8c0a-9aeda5450d28"
           },
@@ -22,6 +42,9 @@
           },
           "Gatunki filmów_1": {
             "tableName": "c8ae458c-5de9-44c0-b82b-e3cc8bcec2a7"
+          },
+          "Kosztorys": {
+            "tableName": "0a35cc5c-440e-427d-8a06-9af58da0e7f6"
           },
           "Lokalizacja": {
             "tableName": "714c2c97-ca2c-454d-b8f9-0c751a256b15"
@@ -37,6 +60,9 @@
           },
           "Pracownik_2": {
             "tableName": "51480b03-8cdb-4836-b2e1-edd524c87d36"
+          },
+          "Rola": {
+            "tableName": "f2444d1b-6fad-4cdd-b6a6-481d64d35b73"
           },
           "Skład zespołu": {
             "tableName": "0ad9b334-e4a6-4ee9-a903-e0c9588333f1"
@@ -65,27 +91,13 @@
       "Skład zespołu",
       "Zadanie_1",
       "Spotkanie",
-      "Pracownik"
+      "Pracownik",
+      "Aktor Filmowy",
+      "Kosztorys",
+      "Rola"
     ],
     "dependencies": {},
     "dependents": [],
     "id": "2c465da7-916c-4257-a26d-737ff2848444"
-  },
-  "36e179d2-ec17-4e2c-9f9b-8525ec35466c": {
-    "connectionParameters": {
-      "sku": "Enterprise"
-    },
-    "connectionRef": {
-      "displayName": "Spatial Services",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1601/1.0.1601.3047/microsoftspatialservices/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_microsoftspatialservices"
-    },
-    "datasets": {},
-    "dataSources": [
-      "SpatialServices"
-    ],
-    "dependencies": {},
-    "dependents": [],
-    "id": "36e179d2-ec17-4e2c-9f9b-8525ec35466c"
   }
 }

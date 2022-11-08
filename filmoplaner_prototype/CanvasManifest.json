@@ -110,7 +110,10 @@
     "UserLocale": "pl-PL"
   },
   "ScreenOrder": [
-    "MainMenu",
+    "LoginMenu",
+    "MainMenuMenedzer",
+    "MainMenuPracownik",
+    "MainMenuAktor",
     "DisplayAndEditMenu",
     "Pracownicy_wyswietl",
     "Pracownicy_usun",
@@ -126,6 +129,9 @@
     "Lokalizacje_usun",
     "Filmy_wyswietl",
     "Filmy_usun",
+    "Aktorzy_wyswietl",
+    "Role_wyswietl",
+    "Kosztorys_wyswietl",
     "Pracownicy_wyswietl_szczegoly",
     "Spotkania_wyswietl_szczegoly",
     "Zadania_wyswietl_szczegoly",
