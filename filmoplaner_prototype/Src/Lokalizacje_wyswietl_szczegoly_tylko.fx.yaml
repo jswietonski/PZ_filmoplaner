@@ -191,9 +191,9 @@ Lokalizacje_wyswietl_szczegoly_tylko As screen:
         CurrentLocation: =true
         CurrentLocationLatitude: =Value(DataCardValue150.Text)
         CurrentLocationLongitude: =Value()
-        DefaultLatitude: =Value(DataCardValue150.Text)
+        DefaultLatitude: =DataCardValue150
         DefaultLocation: =false
-        DefaultLongitude: =Value(DataCardValue151.Text)
+        DefaultLongitude: =DataCardValue151
         DisplayMode: =DisplayMode.Edit
         Height: =446
         Items: =Lokalizacja

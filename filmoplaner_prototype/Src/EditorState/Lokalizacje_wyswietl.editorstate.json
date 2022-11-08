@@ -1615,6 +1615,9 @@
       "MetaDataIDKey": "",
       "Name": "Map1",
       "ParentIndex": 9,
+      "PcfServiceDependencies": [
+        "SpatialServices"
+      ],
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
