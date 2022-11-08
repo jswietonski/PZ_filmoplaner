@@ -1,0 +1,126 @@
+"EdytujZadanie_pracownik As screen.'phoneLayout_HeaderAndForm_ver3.0'":
+    Fill: =RGBA(204, 231, 246, 1)
+
+    RectQuickActionBar5_65 As rectangle:
+        Height: =106
+        Width: =Parent.Width
+        ZIndex: =1
+
+    RectQuickActionBar4_10 As rectangle:
+        Height: =88
+        Width: =Parent.Width
+        ZIndex: =2
+
+    IconAccept9_10 As icon.Check:
+        AccessibleLabel: =Self.Tooltip
+        Height: =88
+        Icon: =Icon.Check
+        OnSelect: =SubmitForm(EditForm9_10)
+        PaddingBottom: =22
+        PaddingLeft: =22
+        PaddingRight: =22
+        PaddingTop: =22
+        TabIndex: =0
+        Tooltip: ="Prześlij element"
+        Width: =88
+        X: =452
+        Y: =9
+        ZIndex: =3
+
+    LblAppName4_10 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Semibold
+        Height: =106
+        Size: =28
+        Text: ="Edycja zadania"
+        Width: =452
+        Wrap: =false
+        ZIndex: =4
+
+    EditForm9_10 As form:
+        DataSource: =Zadanie
+        Height: =1030
+        Item: =BrowseGallery1_3.Selected
+        Width: =Parent.Width
+        Y: =106
+        ZIndex: =5
+
+        Załączniki_DataCard7 As typedDataCard.attachmentsEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="{Attachments}"
+            Default: =ThisItem.Załączniki
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@Zadanie],DataSourceInfo.DisplayName,"{Attachments}")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue146.Attachments
+            Width: =640
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey148 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue146 As attachments:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DisplayMode: =Parent.DisplayMode
+                Height: =520
+                IsInDataCard: =true
+                Items: =Parent.Default
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey148.Y + DataCardKey148.Height + 5
+                ZIndex: =2
+
+            ErrorMessage111 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue146.Y + DataCardValue146.Height
+                ZIndex: =3
+
+            StarVisible111 As label:
+                Align: =Align.Center
+                Height: =DataCardKey148.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey148.Y
+                ZIndex: =4
+
+    Icon1_60 As icon.Undo:
+        Height: =71
+        Icon: =Icon.Undo
+        OnSelect: =Back()
+        Width: =88
+        X: =540
+        Y: =17
+        ZIndex: =6
+

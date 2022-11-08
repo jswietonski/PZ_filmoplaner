@@ -1,48 +1,66 @@
-DisplayAndEditMenuAktor As screen:
+DisplayAndEditMenuPracownik As screen:
     Fill: =RGBA(204, 231, 246, 1)
 
-    RectQuickActionBar5_54 As rectangle:
+    RectQuickActionBar5_40 As rectangle:
         Height: =106
         Width: =Parent.Width
         ZIndex: =1
 
-    Button3_16 As button:
+    Button3_24 As button:
+        Height: =70
+        OnSelect: =Navigate(Pracownicy_wyswietl_tylko)
+        Size: =24
+        Text: ="Pracownicy"
+        Width: =640
+        Y: =150
+        ZIndex: =2
+
+    Button3_26 As button:
         Height: =70
         OnSelect: =Navigate(Spotkania_wyswietl_tylko)
         Size: =24
         Text: ="Spotkania"
         Width: =640
-        Y: =292
+        Y: =310
         ZIndex: =4
 
-    Button3_18 As button:
+    Button3_27 As button:
+        Height: =70
+        OnSelect: =Navigate(Zadania_wyswietl_pracownik)
+        Size: =24
+        Text: ="Zadania"
+        Width: =640
+        Y: =390
+        ZIndex: =5
+
+    Button3_28 As button:
         Height: =70
         OnSelect: =Navigate(Menedzerowie_wyswietl_tylko)
         Size: =24
         Text: ="Menedżerowie"
         Width: =640
-        Y: =192
+        Y: =470
         ZIndex: =6
 
-    Button3_19 As button:
+    Button3_29 As button:
         Height: =70
         OnSelect: =Navigate(Lokalizacje_wyswietl_tylko)
         Size: =24
         Text: ="Lokalizacje"
         Width: =640
-        Y: =392
+        Y: =550
         ZIndex: =7
 
-    Button3_20 As button:
+    Button3_30 As button:
         Height: =70
         OnSelect: =Navigate(Filmy_wyswietl_tylko)
         Size: =24
         Text: ="Filmy"
         Width: =640
-        Y: =492
+        Y: =230
         ZIndex: =8
 
-    Icon1_49 As icon.Undo:
+    Icon1_57 As icon.Undo:
         Height: =71
         Icon: =Icon.Undo
         OnSelect: =Back()
@@ -51,7 +69,7 @@ DisplayAndEditMenuAktor As screen:
         Y: =17
         ZIndex: =9
 
-    Label3_2 As label:
+    Label3_3 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Semibold
@@ -60,4 +78,14 @@ DisplayAndEditMenuAktor As screen:
         Text: ="Wyświetl listę..."
         Width: =560
         ZIndex: =10
+
+    Label4_2 As label:
+        Align: =Align.Center
+        Height: =90
+        Size: =23
+        Text: |-
+            ="Podpowiedź: po wyświetleniu zadań możesz edytować załączone pliki!"
+        Width: =640
+        Y: =1006
+        ZIndex: =11
 

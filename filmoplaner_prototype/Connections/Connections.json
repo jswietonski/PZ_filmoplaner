@@ -83,7 +83,7 @@
     "dependents": [],
     "id": "2c465da7-916c-4257-a26d-737ff2848444"
   },
-  "3cbd2377-07ef-40d0-96d3-b07e38e3963f": {
+  "6ae71095-b068-4262-857b-0e5cb01b07ea": {
     "connectionParameters": {
       "sku": "Enterprise"
     },
@@ -98,6 +98,6 @@
     ],
     "dependencies": {},
     "dependents": [],
-    "id": "3cbd2377-07ef-40d0-96d3-b07e38e3963f"
+    "id": "6ae71095-b068-4262-857b-0e5cb01b07ea"
   }
 }
