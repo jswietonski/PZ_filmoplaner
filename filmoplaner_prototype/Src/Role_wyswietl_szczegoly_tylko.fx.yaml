@@ -1,0 +1,252 @@
+Role_wyswietl_szczegoly_tylko As screen:
+    Fill: =RGBA(204, 231, 246, 1)
+
+    RectQuickActionBar5_73 As rectangle:
+        Height: =106
+        Width: =Parent.Width
+        ZIndex: =1
+
+    FormViewer2_16 As formViewer:
+        DataSource: =Rola
+        Height: =1029
+        Item: =BrowseGallery1_27.Selected
+        Width: =640
+        Y: =106
+        ZIndex: =2
+
+        Nazwa_DataCard2_1 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="{Name}"
+            Default: =ThisItem.Nazwa
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Rola],DataSourceInfo.DisplayName,"{Name}")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey110_1 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue108_1 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =60
+                Y: =58
+                ZIndex: =2
+
+        "'Typ roli_DataCard1_1' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_4"
+            Default: =ThisItem.'Typ roli'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Rola],DataSourceInfo.DisplayName,"field_4")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey111_1 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue109_1 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =60
+                Y: =58
+                ZIndex: =2
+
+        Film_DataCard7_1 As typedDataCard.comboBoxViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Film"
+            Default: =ThisItem.Film
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Rola],DataSourceInfo.DisplayName,"Film")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue110_1.Selected
+            Width: =640
+            X: =0
+            Y: =2
+            ZIndex: =1
+
+            DataCardKey112_1 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue110_1 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                Items: =Choices([@Rola].Film)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices(Rola.Film,DataCardValue110_1.SearchText)
+                SelectMultiple: =false
+                Size: =21
+                Width: =Parent.Width - 60
+                X: =60
+                Y: =58
+                ZIndex: =2
+
+            ErrorMessage79_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue110_1.Y + DataCardValue110_1.Height
+                ZIndex: =3
+
+            StarVisible79_1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey112_1.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey112_1.Y
+                ZIndex: =4
+
+        Aktor_DataCard1_1 As typedDataCard.comboBoxViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Aktor"
+            Default: =ThisItem.Aktor
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Rola],DataSourceInfo.DisplayName,"Aktor")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue111_1.Selected
+            Width: =640
+            X: =0
+            Y: =3
+            ZIndex: =1
+
+            DataCardKey113_1 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue111_1 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                Items: =Choices([@Rola].Aktor)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices(Rola.Aktor,DataCardValue111_1.SearchText)
+                SelectMultiple: =false
+                Size: =21
+                Width: =Parent.Width - 60
+                X: =60
+                Y: =58
+                ZIndex: =2
+
+            ErrorMessage80_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue111_1.Y + DataCardValue111_1.Height
+                ZIndex: =3
+
+            StarVisible80_1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey113_1.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey113_1.Y
+                ZIndex: =4
+
+    Icon1_68 As icon.Undo:
+        Height: =71
+        Icon: =Icon.Undo
+        OnSelect: =Back()
+        Width: =88
+        X: =552
+        Y: =17
+        ZIndex: =3
+
+    Label5_16 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =106
+        Size: =30
+        Text: |-
+            ="Rola:"
+        Width: =560
+        ZIndex: =4
+

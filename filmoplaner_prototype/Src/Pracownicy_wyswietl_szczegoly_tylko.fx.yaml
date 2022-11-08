@@ -1,0 +1,303 @@
+Pracownicy_wyswietl_szczegoly_tylko As screen:
+    Fill: =RGBA(204, 231, 246, 1)
+
+    RectQuickActionBar5_66 As rectangle:
+        Height: =106
+        Width: =Parent.Width
+        ZIndex: =1
+
+    FormViewer2_10 As formViewer:
+        AcceptsFocus: =false
+        DataSource: =Pracownik_1
+        Height: =1029
+        Item: =BrowseGallery1_25.Selected
+        Width: =640
+        Y: =106
+        ZIndex: =2
+
+        Imię_DataCard2_1 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Title"
+            Default: =ThisItem.Imię
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Pracownik_1],DataSourceInfo.DisplayName,"Title")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey27_1 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue26_1 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey27_1.Y + DataCardKey27_1.Height + 5
+                ZIndex: =2
+
+        Nazwisko_DataCard2_1 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_2"
+            Default: =ThisItem.Nazwisko
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Pracownik_1],DataSourceInfo.DisplayName,"field_2")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =1
+            ZIndex: =3
+
+            DataCardKey7_1 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue7_1 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey7_1.Y + DataCardKey7_1.Height + 5
+                ZIndex: =2
+
+        "'Rola _DataCard2_1' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_5"
+            Default: =ThisItem.'Rola '
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Pracownik_1],DataSourceInfo.DisplayName,"field_5")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =2
+            ZIndex: =3
+
+            DataCardKey10_1 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue10_1 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey10_1.Y + DataCardKey10_1.Height + 5
+                ZIndex: =2
+
+        "'Numer telefonu_DataCard2_1' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_7"
+            Default: =ThisItem.'Numer telefonu'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Pracownik_1],DataSourceInfo.DisplayName,"field_7")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =3
+            ZIndex: =3
+
+            DataCardKey19_1 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue19_1 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey19_1.Y + DataCardKey19_1.Height + 5
+                ZIndex: =2
+
+        "'Data Urodzenia_DataCard2_1' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_6"
+            Default: =ThisItem.'Data Urodzenia'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Pracownik_1],DataSourceInfo.DisplayName,"field_6")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =4
+            ZIndex: =3
+
+            DataCardKey11_1 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue11_1 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey11_1.Y + DataCardKey11_1.Height + 5
+                ZIndex: =2
+
+        "'Data Zatrudnienia_DataCard2_1' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_3"
+            Default: =ThisItem.'Data Zatrudnienia'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Pracownik_1],DataSourceInfo.DisplayName,"field_3")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =5
+            ZIndex: =3
+
+            DataCardKey8_1 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue8_1 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey8_1.Y + DataCardKey8_1.Height + 5
+                ZIndex: =2
+
+        Wynagrodzenie_DataCard2_1 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_4"
+            Default: =ThisItem.Wynagrodzenie
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Pracownik_1],DataSourceInfo.DisplayName,"field_4")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =6
+            ZIndex: =3
+
+            DataCardKey9_1 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue9_1 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey9_1.Y + DataCardKey9_1.Height + 5
+                ZIndex: =2
+
+    Icon1_61 As icon.Undo:
+        Height: =71
+        Icon: =Icon.Undo
+        OnSelect: =Back()
+        Width: =88
+        X: =552
+        Y: =17
+        ZIndex: =3
+
+    Label5_10 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =106
+        Size: =30
+        Text: |-
+            ="Pracownik:"
+        Width: =560
+        ZIndex: =4
+

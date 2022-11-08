@@ -35,7 +35,7 @@
             AccessibleLabel: =Self.Tooltip
             Height: =60
             Icon: =Icon.ChevronRight
-            OnSelect: = Navigate(Menedzerowie_wyswietl_szczegoly)
+            OnSelect: = Navigate(Menedzerowie_wyswietl_szczegoly_tylko)
             PaddingBottom: =10
             PaddingLeft: =10
             PaddingRight: =10

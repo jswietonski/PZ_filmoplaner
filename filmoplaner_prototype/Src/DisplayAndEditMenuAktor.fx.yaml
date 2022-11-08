@@ -61,3 +61,12 @@ DisplayAndEditMenuAktor As screen:
         Width: =560
         ZIndex: =10
 
+    Button3_25 As button:
+        Height: =70
+        OnSelect: =Navigate(Role_wyswietl_tylko)
+        Size: =24
+        Text: ="Role"
+        Width: =640
+        Y: =592
+        ZIndex: =11
+

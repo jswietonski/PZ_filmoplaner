@@ -1,41 +1,41 @@
-"Filmy_wyswietl_tylko As screen.'phoneLayout_HeaderAndGallery_ver3.0'":
+"Role_wyswietl_tylko As screen.'phoneLayout_HeaderAndGallery_ver3.0'":
     Fill: =RGBA(204, 231, 246, 1)
 
-    RectQuickActionBar5_61 As rectangle:
+    RectQuickActionBar5_72 As rectangle:
         Height: =106
         Width: =Parent.Width
         ZIndex: =1
 
-    "BrowseGallery1_24 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
-        Height: =Parent.Height - BrowseGallery1_24.Y
-        Items: =If(SortDescending1,Sort(Film_1,'Nazwa (Title)',Descending),(If(!SortDescending1,Sort(Film_1,'Nazwa (Title)',Ascending))))
+    "BrowseGallery1_27 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
+        Height: =Parent.Height - BrowseGallery1_27.Y
+        Items: =If(SortDescending1,Sort(Rola,Title,Descending),(If(!SortDescending1,Sort(Rola,Title,Ascending))))
         Layout: =Layout.Vertical
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =Min(96, Self.Height - 60)
         Width: =Parent.Width
-        Y: =TextSearchBox1_24.Y + TextSearchBox1_24.Height
+        Y: =TextSearchBox1_27.Y + TextSearchBox1_27.Height
         ZIndex: =2
 
-        Title6_22 As label:
+        Title6_25 As label:
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.'Nazwa ({Name})'
+            Text: =ThisItem.Nazwa
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
             X: =32
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =1
 
-        NextArrow6_13 As icon.ChevronRight:
+        NextArrow6_16 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
             Height: =60
             Icon: =Icon.ChevronRight
-            OnSelect: = Navigate(Filmy_wyswietl_szczegoly_tylko)
+            OnSelect: = Navigate(Role_wyswietl_szczegoly_tylko)
             PaddingBottom: =10
             PaddingLeft: =10
             PaddingRight: =10
@@ -47,25 +47,25 @@
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =2
 
-        Separator7_22 As rectangle:
+        Separator7_25 As rectangle:
             Height: =1
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
             Y: =Parent.TemplateHeight - 1
             ZIndex: =3
 
-    LblAppName2_24 As label:
+    LblAppName2_27 As label:
         Align: =Align.Center
         FontWeight: =FontWeight.Semibold
         Height: =106
         Size: =30
-        Text: ="Filmy"
+        Text: ="Role"
         Width: =376
         Wrap: =false
         ZIndex: =4
 
-    IconRefresh1_24 As icon.Reload:
-        AccessibleLabel: =IconRefresh1_24.Tooltip
+    IconRefresh1_27 As icon.Reload:
+        AccessibleLabel: =IconRefresh1_27.Tooltip
         Height: =88
         Icon: =Icon.Reload
         PaddingBottom: =22
@@ -79,8 +79,8 @@
         Y: =9
         ZIndex: =5
 
-    IconSortUpDown1_24 As icon.ArrowsUpDown:
-        AccessibleLabel: =IconSortUpDown1_24.Tooltip
+    IconSortUpDown1_27 As icon.ArrowsUpDown:
+        AccessibleLabel: =IconSortUpDown1_27.Tooltip
         Height: =88
         Icon: =Icon.Sort
         OnSelect: |-
@@ -96,7 +96,7 @@
         Y: =9
         ZIndex: =6
 
-    TextSearchBox1_24 As text:
+    TextSearchBox1_27 As text:
         Align: =Left
         Default: =""
         Height: =68
@@ -111,26 +111,26 @@
         Y: =106
         ZIndex: =7
 
-    SearchIcon1_24 As icon.Search:
-        Height: =SearchIcon1_24.Width
+    SearchIcon1_27 As icon.Search:
+        Height: =SearchIcon1_27.Width
         Icon: =Icon.Search
         PaddingBottom: =14
         PaddingLeft: =14
         PaddingRight: =14
         PaddingTop: =14
         Tooltip: ="Wyszukaj"
-        Width: =TextSearchBox1_24.Height
-        X: =TextSearchBox1_24.X
-        Y: =TextSearchBox1_24.Y
+        Width: =TextSearchBox1_27.Height
+        X: =TextSearchBox1_27.X
+        Y: =TextSearchBox1_27.Y
         ZIndex: =8
 
-    Rectangle12_24 As rectangle:
+    Rectangle12_27 As rectangle:
         Height: =2
         Width: =Parent.Width
-        Y: =TextSearchBox1_24.Y + TextSearchBox1_24.Height
+        Y: =TextSearchBox1_27.Y + TextSearchBox1_27.Height
         ZIndex: =9
 
-    Icon1_56 As icon.Undo:
+    Icon1_67 As icon.Undo:
         Height: =71
         Icon: =Icon.Undo
         OnSelect: =Back()
