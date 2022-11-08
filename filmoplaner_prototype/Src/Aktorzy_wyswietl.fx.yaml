@@ -35,7 +35,7 @@
             AccessibleLabel: =Self.Tooltip
             Height: =60
             Icon: =Icon.ChevronRight
-            OnSelect: = Navigate(Filmy_wyswietl_szczegoly)
+            OnSelect: = Navigate(Aktorzy_wyswietl_szczegoly)
             PaddingBottom: =10
             PaddingLeft: =10
             PaddingRight: =10
@@ -53,6 +53,13 @@
             Width: =Parent.TemplateWidth
             Y: =Parent.TemplateHeight - 1
             ZIndex: =3
+
+        Icon3 As icon.Edit:
+            Icon: =Icon.Edit
+            OnSelect: =Navigate(EdytujAktora)
+            X: =504
+            Y: =14
+            ZIndex: =4
 
     LblAppName2_15 As label:
         Align: =Align.Center

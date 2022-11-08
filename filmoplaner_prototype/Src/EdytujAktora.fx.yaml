@@ -1,0 +1,486 @@
+"EdytujAktora As screen.'phoneLayout_HeaderAndForm_ver3.0'":
+    Fill: =RGBA(204, 231, 246, 1)
+
+    RectQuickActionBar5_48 As rectangle:
+        Height: =106
+        Width: =Parent.Width
+        ZIndex: =1
+
+    RectQuickActionBar4_7 As rectangle:
+        Height: =88
+        Width: =Parent.Width
+        ZIndex: =2
+
+    IconAccept9_7 As icon.Check:
+        AccessibleLabel: =Self.Tooltip
+        Height: =88
+        Icon: =Icon.Check
+        OnSelect: =SubmitForm(EditForm9_7)
+        PaddingBottom: =22
+        PaddingLeft: =22
+        PaddingRight: =22
+        PaddingTop: =22
+        TabIndex: =0
+        Tooltip: ="Prześlij element"
+        Width: =88
+        X: =452
+        Y: =9
+        ZIndex: =3
+
+    LblAppName4_7 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Semibold
+        Height: =106
+        Size: =28
+        Text: ="Edycja aktora"
+        Width: =452
+        Wrap: =false
+        ZIndex: =4
+
+    EditForm9_7 As form:
+        DataSource: ='Aktor Filmowy'
+        Height: =1030
+        Item: =BrowseGallery1_15.Selected
+        Width: =Parent.Width
+        Y: =106
+        ZIndex: =5
+
+        "'Imie _DataCard2' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_1"
+            Default: =ThisItem.'Imie '
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Aktor Filmowy'],DataSourceInfo.DisplayName,"field_1")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Aktor Filmowy'], DataSourceInfo.MaxLength, "field_1")
+            Required: =false
+            Update: =DataCardValue101.Text
+            Width: =640
+            X: =0
+            Y: =0
+            ZIndex: =6
+
+            DataCardKey103 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue101 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey103.Y + DataCardKey103.Height + 5
+                ZIndex: =2
+
+            ErrorMessage66 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue101.Y + DataCardValue101.Height
+                ZIndex: =3
+
+            StarVisible66 As label:
+                Align: =Align.Center
+                Height: =DataCardKey103.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey103.Y
+                ZIndex: =4
+
+        "'Numer Telefonu_DataCard2' As typedDataCard.numberEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_3"
+            Default: =ThisItem.'Numer Telefonu'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Aktor Filmowy'],DataSourceInfo.DisplayName,"field_3")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =Value(DataCardValue103.Text)
+            Width: =640
+            X: =0
+            Y: =2
+            ZIndex: =6
+
+            DataCardKey105 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue103 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Format: =TextFormat.Number
+                Height: =70
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey105.Y + DataCardKey105.Height + 5
+                ZIndex: =2
+
+            ErrorMessage68 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue103.Y + DataCardValue103.Height
+                ZIndex: =3
+
+            StarVisible68 As label:
+                Align: =Align.Center
+                Height: =DataCardKey105.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey105.Y
+                ZIndex: =4
+
+        "'Data Urodzenia _DataCard2' As typedDataCard.dateEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_4"
+            Default: =ThisItem.'Data Urodzenia '
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Aktor Filmowy'],DataSourceInfo.DisplayName,"field_4")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue104.SelectedDate
+            Width: =640
+            X: =0
+            Y: =3
+            ZIndex: =6
+
+            DataCardKey106 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue104 As datepicker:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultDate: =Parent.Default
+                DisplayMode: =Parent.DisplayMode
+                EndYear: =Year(Today())+100
+                Height: =70
+                IsEditable: =true
+                PaddingBottom: =0
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =24
+                StartYear: =1899
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey106.Y + DataCardKey106.Height + 5
+                ZIndex: =2
+
+            ErrorMessage74 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue104.Y + DataCardValue104.Height
+                ZIndex: =3
+
+            StarVisible74 As label:
+                Align: =Align.Center
+                Height: =DataCardKey106.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey106.Y
+                ZIndex: =4
+
+        "'Data zatrudnienia_DataCard2' As typedDataCard.dateEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Data_x0020_zatrudnienia"
+            Default: =ThisItem.'Data zatrudnienia'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Aktor Filmowy'],DataSourceInfo.DisplayName,"Data_x0020_zatrudnienia")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue106.SelectedDate
+            Width: =640
+            X: =0
+            Y: =4
+            ZIndex: =6
+
+            DataCardKey108 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue106 As datepicker:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultDate: =Parent.Default
+                DisplayMode: =Parent.DisplayMode
+                EndYear: =Year(Today())+100
+                Height: =70
+                IsEditable: =true
+                PaddingBottom: =0
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =24
+                StartYear: =1899
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey108.Y + DataCardKey108.Height + 5
+                ZIndex: =2
+
+            ErrorMessage77 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue106.Y + DataCardValue106.Height
+                ZIndex: =3
+
+            StarVisible77 As label:
+                Align: =Align.Center
+                Height: =DataCardKey108.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey108.Y
+                ZIndex: =4
+
+        "'Wynagrodzenie _DataCard2' As typedDataCard.numberEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_6"
+            Default: =ThisItem.'Wynagrodzenie '
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Aktor Filmowy'],DataSourceInfo.DisplayName,"field_6")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =Value(DataCardValue105.Text)
+            Width: =640
+            X: =0
+            Y: =5
+            ZIndex: =6
+
+            DataCardKey107 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue105 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Format: =TextFormat.Number
+                Height: =70
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey107.Y + DataCardKey107.Height + 5
+                ZIndex: =2
+
+            ErrorMessage76 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue105.Y + DataCardValue105.Height
+                ZIndex: =3
+
+            StarVisible76 As label:
+                Align: =Align.Center
+                Height: =DataCardKey107.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey107.Y
+                ZIndex: =4
+
+        Nazwisko_DataCard4 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Title"
+            Default: =ThisItem.Nazwisko
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Aktor Filmowy'],DataSourceInfo.DisplayName,"Title")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Aktor Filmowy'], DataSourceInfo.MaxLength, "Title")
+            Required: =false
+            Update: =DataCardValue95.Text
+            Width: =640
+            X: =0
+            Y: =1
+            ZIndex: =6
+
+            DataCardKey97 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue95 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey97.Y + DataCardKey97.Height + 5
+                ZIndex: =2
+
+            ErrorMessage58 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue95.Y + DataCardValue95.Height
+                ZIndex: =3
+
+            StarVisible58 As label:
+                Align: =Align.Center
+                Height: =DataCardKey97.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey97.Y
+                ZIndex: =4
+
+    Icon1_43 As icon.Undo:
+        Height: =71
+        Icon: =Icon.Undo
+        OnSelect: =Back()
+        Width: =88
+        X: =540
+        Y: =17
+        ZIndex: =6
+

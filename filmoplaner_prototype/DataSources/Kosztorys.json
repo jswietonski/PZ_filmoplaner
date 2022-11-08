@@ -32,8 +32,8 @@
       "field_2": "Koszty produkcji",
       "field_3": "Koszt postprodukcji",
       "field_4": "Koszt marketingu",
-      "Film": "Film",
-      "Film#Id": "Film Id",
+      "Film": "Nazwa filmu",
+      "Film#Id": "Nazwa filmu Id",
       "ID": "Identyfikator (ID)",
       "Modified": "Zmodyfikowane",
       "Title": "Koszt całkowity"

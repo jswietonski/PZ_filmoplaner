@@ -1,0 +1,344 @@
+"EdytujRole As screen.'phoneLayout_HeaderAndForm_ver3.0'":
+    Fill: =RGBA(204, 231, 246, 1)
+
+    RectQuickActionBar5_51 As rectangle:
+        Height: =106
+        Width: =Parent.Width
+        ZIndex: =1
+
+    RectQuickActionBar4_8 As rectangle:
+        Height: =88
+        Width: =Parent.Width
+        ZIndex: =2
+
+    IconAccept9_8 As icon.Check:
+        AccessibleLabel: =Self.Tooltip
+        Height: =88
+        Icon: =Icon.Check
+        OnSelect: =SubmitForm(EditForm9_8)
+        PaddingBottom: =22
+        PaddingLeft: =22
+        PaddingRight: =22
+        PaddingTop: =22
+        TabIndex: =0
+        Tooltip: ="Prześlij element"
+        Width: =88
+        X: =452
+        Y: =9
+        ZIndex: =3
+
+    LblAppName4_8 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Semibold
+        Height: =106
+        Size: =28
+        Text: ="Edycja roli"
+        Width: =452
+        Wrap: =false
+        ZIndex: =4
+
+    EditForm9_8 As form:
+        DataSource: =Rola
+        Height: =1030
+        Item: =BrowseGallery1_16.Selected
+        Width: =Parent.Width
+        Y: =106
+        ZIndex: =5
+
+        Rola_DataCard1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Title"
+            Default: =ThisItem.Rola
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@Rola],DataSourceInfo.DisplayName,"Title")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@Rola], DataSourceInfo.MaxLength, "Title")
+            Required: =false
+            Update: =DataCardValue112.Text
+            Width: =640
+            X: =0
+            Y: =0
+            ZIndex: =6
+
+            DataCardKey114 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue112 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey114.Y + DataCardKey114.Height + 5
+                ZIndex: =2
+
+            ErrorMessage81 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue112.Y + DataCardValue112.Height
+                ZIndex: =3
+
+            StarVisible81 As label:
+                Align: =Align.Center
+                Height: =DataCardKey114.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey114.Y
+                ZIndex: =4
+
+        "'Typ roli_DataCard2' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_4"
+            Default: =ThisItem.'Typ roli'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@Rola],DataSourceInfo.DisplayName,"field_4")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@Rola], DataSourceInfo.MaxLength, "field_4")
+            Required: =false
+            Update: =DataCardValue113.Text
+            Width: =640
+            X: =0
+            Y: =1
+            ZIndex: =6
+
+            DataCardKey115 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue113 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey115.Y + DataCardKey115.Height + 5
+                ZIndex: =2
+
+            ErrorMessage82 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue113.Y + DataCardValue113.Height
+                ZIndex: =3
+
+            StarVisible82 As label:
+                Align: =Align.Center
+                Height: =DataCardKey115.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey115.Y
+                ZIndex: =4
+
+        Film_DataCard8 As typedDataCard.comboBoxEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Film"
+            Default: =ThisItem.Film
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@Rola],DataSourceInfo.DisplayName,"Film")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue114.Selected
+            Width: =640
+            X: =0
+            Y: =2
+            ZIndex: =6
+
+            DataCardKey116 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue114 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                Items: =Choices([@Rola].Film)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices(Rola.Film,DataCardValue114.SearchText)
+                SelectMultiple: =false
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey116.Y + DataCardKey116.Height + 5
+                ZIndex: =2
+
+            ErrorMessage83 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue114.Y + DataCardValue114.Height
+                ZIndex: =3
+
+            StarVisible83 As label:
+                Align: =Align.Center
+                Height: =DataCardKey116.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey116.Y
+                ZIndex: =4
+
+        Aktor_DataCard2 As typedDataCard.comboBoxEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Aktor"
+            Default: =ThisItem.Aktor
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@Rola],DataSourceInfo.DisplayName,"Aktor")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue115.Selected
+            Width: =640
+            X: =0
+            Y: =3
+            ZIndex: =6
+
+            DataCardKey117 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue115 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                Items: =Choices([@Rola].Aktor)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices(Rola.Aktor,DataCardValue115.SearchText)
+                SelectMultiple: =false
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey117.Y + DataCardKey117.Height + 5
+                ZIndex: =2
+
+            ErrorMessage84 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue115.Y + DataCardValue115.Height
+                ZIndex: =3
+
+            StarVisible84 As label:
+                Align: =Align.Center
+                Height: =DataCardKey117.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey117.Y
+                ZIndex: =4
+
+    Icon1_46 As icon.Undo:
+        Height: =71
+        Icon: =Icon.Undo
+        OnSelect: =Back()
+        Width: =88
+        X: =540
+        Y: =17
+        ZIndex: =6
+

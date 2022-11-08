@@ -1,0 +1,258 @@
+Kosztorys_wyswietl_szczegoly As screen:
+    Fill: =RGBA(204, 231, 246, 1)
+
+    RectQuickActionBar5_47 As rectangle:
+        Height: =106
+        Width: =Parent.Width
+        ZIndex: =1
+
+    FormViewer2_9 As formViewer:
+        DataSource: =Kosztorys
+        Height: =1029
+        Item: =BrowseGallery1_17.Selected
+        Width: =640
+        Y: =106
+        ZIndex: =2
+
+        "'Koszt całkowity_DataCard1' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Title"
+            Default: =ThisItem.'Koszt całkowity'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Kosztorys],DataSourceInfo.DisplayName,"Title")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey119 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue117 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =60
+                Y: =58
+                ZIndex: =2
+
+        "'Koszty produkcji_DataCard1' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_2"
+            Default: =ThisItem.'Koszty produkcji'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Kosztorys],DataSourceInfo.DisplayName,"field_2")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey120 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue118 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =60
+                Y: =58
+                ZIndex: =2
+
+        "'Koszt postprodukcji_DataCard1' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_3"
+            Default: =ThisItem.'Koszt postprodukcji'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Kosztorys],DataSourceInfo.DisplayName,"field_3")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =2
+            ZIndex: =1
+
+            DataCardKey121 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue119 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =60
+                Y: =58
+                ZIndex: =2
+
+        "'Koszt marketingu_DataCard1' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_4"
+            Default: =ThisItem.'Koszt marketingu'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Kosztorys],DataSourceInfo.DisplayName,"field_4")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =3
+            ZIndex: =1
+
+            DataCardKey122 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue120 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =60
+                Y: =58
+                ZIndex: =2
+
+        "'Nazwa filmu_DataCard1' As typedDataCard.comboBoxViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Film"
+            Default: =ThisItem.'Nazwa filmu'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Kosztorys],DataSourceInfo.DisplayName,"Film")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue121.Selected
+            Width: =640
+            X: =0
+            Y: =4
+            ZIndex: =1
+
+            DataCardKey123 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue121 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                Items: =Choices([@Kosztorys].Film)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices(Kosztorys.Film,DataCardValue121.SearchText)
+                SelectMultiple: =false
+                Size: =21
+                Width: =Parent.Width - 60
+                X: =60
+                Y: =60
+                ZIndex: =2
+
+            ErrorMessage86 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue121.Y + DataCardValue121.Height
+                ZIndex: =3
+
+            StarVisible86 As label:
+                Align: =Align.Center
+                Height: =DataCardKey123.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey123.Y
+                ZIndex: =4
+
+    Icon1_42 As icon.Undo:
+        Height: =71
+        Icon: =Icon.Undo
+        OnSelect: =Back()
+        Width: =88
+        X: =552
+        Y: =17
+        ZIndex: =3
+
+    Label5_9 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =106
+        Size: =30
+        Text: |-
+            ="Kosztorys:"
+        Width: =560
+        ZIndex: =4
+

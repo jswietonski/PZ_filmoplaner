@@ -1,0 +1,264 @@
+Aktorzy_wyswietl_szczegoly As screen:
+    Fill: =RGBA(204, 231, 246, 1)
+
+    RectQuickActionBar5_45 As rectangle:
+        Height: =106
+        Width: =Parent.Width
+        ZIndex: =1
+
+    FormViewer2_7 As formViewer:
+        DataSource: ='Aktor Filmowy'
+        Height: =1029
+        Item: =BrowseGallery1_15.Selected
+        Width: =640
+        Y: =106
+        ZIndex: =2
+
+        "'Imie _DataCard1' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_1"
+            Default: =ThisItem.'Imie '
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Aktor Filmowy'],DataSourceInfo.DisplayName,"field_1")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey71 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue70 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =60
+                Y: =58
+                ZIndex: =2
+
+        Nazwisko_DataCard3 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Title"
+            Default: =ThisItem.Nazwisko
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Aktor Filmowy'],DataSourceInfo.DisplayName,"Title")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey72 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue71 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =60
+                Y: =58
+                ZIndex: =2
+
+        "'Numer Telefonu_DataCard1' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_3"
+            Default: =ThisItem.'Numer Telefonu'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Aktor Filmowy'],DataSourceInfo.DisplayName,"field_3")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =2
+            ZIndex: =1
+
+            DataCardKey75 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue74 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =60
+                Y: =58
+                ZIndex: =2
+
+        "'Data Urodzenia _DataCard1' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_4"
+            Default: =ThisItem.'Data Urodzenia '
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Aktor Filmowy'],DataSourceInfo.DisplayName,"field_4")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =3
+            ZIndex: =1
+
+            DataCardKey81 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue79 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =60
+                Y: =58
+                ZIndex: =2
+
+        "'Data zatrudnienia_DataCard1' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Data_x0020_zatrudnienia"
+            Default: =ThisItem.'Data zatrudnienia'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Aktor Filmowy'],DataSourceInfo.DisplayName,"Data_x0020_zatrudnienia")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =4
+            ZIndex: =1
+
+            DataCardKey87 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue85 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =60
+                Y: =58
+                ZIndex: =2
+
+        "'Wynagrodzenie _DataCard1' As typedDataCard.textualViewCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_6"
+            Default: =ThisItem.'Wynagrodzenie '
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Aktor Filmowy'],DataSourceInfo.DisplayName,"field_6")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =5
+            ZIndex: =1
+
+            DataCardKey95 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue93 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =60
+                Y: =58
+                ZIndex: =2
+
+    Icon1_40 As icon.Undo:
+        Height: =71
+        Icon: =Icon.Undo
+        OnSelect: =Back()
+        Width: =88
+        X: =552
+        Y: =17
+        ZIndex: =3
+
+    Label5_7 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =106
+        Size: =30
+        Text: |-
+            ="Aktor:"
+        Width: =560
+        ZIndex: =4
+
