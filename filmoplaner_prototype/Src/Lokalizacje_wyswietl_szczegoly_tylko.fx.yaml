@@ -186,64 +186,17 @@ Lokalizacje_wyswietl_szczegoly_tylko As screen:
         Width: =560
         ZIndex: =5
 
-    "Map5 As 'Mapa (wersja zapoznawcza)'.pcfdataset":
+    "Map2 As 'Mapa (wersja zapoznawcza)'.pcfdataset":
         BorderColor: =RGBA(0, 18, 107, 1)
-        CurrentLocation: =true
-        CurrentLocationLatitude: =Value(DataCardValue150.Text)
-        CurrentLocationLongitude: =Value()
-        DefaultLatitude: =DataCardValue150
-        DefaultLocation: =false
-        DefaultLongitude: =DataCardValue151
         DisplayMode: =DisplayMode.Edit
-        Height: =446
-        Items: =Lokalizacja
-        ItemsAddresses: =
-        ItemsLabels: ="{Name}"
+        Height: =550
+        Items: =kolekcja
+        ItemsLabels: ="Title"
         ItemsLatitudes: ="Latitiude"
         ItemsLongitudes: ="Longitude"
         PinColor: =RGBA(29, 114, 169, 1)
-        Width: =498
-        X: =87
-        Y: =645
+        Width: =640
+        X: =0
+        Y: =586
         ZIndex: =6
-
-        Lokalizacja2 As pcfDataField.textualColumn:
-            FieldDisplayName: ="Lokalizacja"
-            FieldName: ="Title"
-            FieldType: ="s"
-            FieldVariantName: ="textualColumn"
-            Order: =1
-            ZIndex: =4
-
-        "'Latitude (szerokość geograficzna)1' As pcfDataField.textualColumn":
-            FieldDisplayName: ="Latitude (szerokość geograficzna)"
-            FieldName: ="Latitiude"
-            FieldType: ="s"
-            FieldVariantName: ="textualColumn"
-            Order: =2
-            ZIndex: =5
-
-        "'Longitude (wysokość geograficzna)1' As pcfDataField.textualColumn":
-            FieldDisplayName: ="Longitude (wysokość geograficzna)"
-            FieldName: ="Longitude"
-            FieldType: ="s"
-            FieldVariantName: ="textualColumn"
-            Order: =3
-            ZIndex: =6
-
-        Powierzchnia1 As pcfDataField.textualColumn:
-            FieldDisplayName: ="Powierzchnia"
-            FieldName: ="Powierzchnia"
-            FieldType: ="n"
-            FieldVariantName: ="textualColumn"
-            Order: =4
-            ZIndex: =7
-
-        Załączniki2 As pcfDataField.textualColumn:
-            FieldDisplayName: ="Załączniki"
-            FieldName: ="{Attachments}"
-            FieldType: ="r*"
-            FieldVariantName: ="textualColumn"
-            Order: =5
-            ZIndex: =8
 
