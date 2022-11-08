@@ -53,6 +53,9 @@
           "Spotkanie": {
             "tableName": "a0337286-ab34-47a0-a4e1-825d4ca5213d"
           },
+          "Studio Filmowe": {
+            "tableName": "714c2c97-ca2c-454d-b8f9-0c751a256b15"
+          },
           "Zadanie": {
             "tableName": "e754c807-8fbc-4fc4-8376-4d4dbefa5e0b"
           },
@@ -77,7 +80,8 @@
       "Pracownik",
       "Aktor Filmowy",
       "Kosztorys",
-      "Rola"
+      "Rola",
+      "Studio Filmowe"
     ],
     "dependencies": {},
     "dependents": [],
