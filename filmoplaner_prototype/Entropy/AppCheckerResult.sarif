@@ -6704,36 +6704,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Aktorzy_wyswietl.BrowseGallery1_15.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Aktorzy_wyswietl.BrowseGallery1_15.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Aktorzy_wyswietl",
-                "type": "Aktorzy_wyswietl.BrowseGallery1_15"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Aktorzy_wyswietl.BrowseGallery1_15.TabIndex"
                 }
               ],
@@ -6764,19 +6734,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Aktorzy_wyswietl.BrowseGallery1_15.Icon4_8.AccessibleLabel"
+                  "fullyQualifiedName": "Aktorzy_wyswietl.BrowseGallery1_15.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Aktorzy_wyswietl.BrowseGallery1_15.Icon4_8.AccessibleLabel",
+                  "fullyQualifiedName": "Aktorzy_wyswietl.BrowseGallery1_15.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Aktorzy_wyswietl",
-                "type": "Aktorzy_wyswietl.BrowseGallery1_15.Icon4_8"
+                "type": "Aktorzy_wyswietl.BrowseGallery1_15"
               }
             }
           ],
@@ -6788,36 +6758,6 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Aktorzy_wyswietl.BrowseGallery1_15.Icon4_8.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Aktorzy_wyswietl.BrowseGallery1_15.Icon4_8.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Aktorzy_wyswietl",
-                "type": "Aktorzy_wyswietl.BrowseGallery1_15.Icon4_8"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
         },
         {
           "locations": [
