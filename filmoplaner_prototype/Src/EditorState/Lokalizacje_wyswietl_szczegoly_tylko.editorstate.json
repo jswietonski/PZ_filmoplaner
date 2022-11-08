@@ -2893,7 +2893,7 @@
       "StyleName": "defaultTypedDataCardStyle",
       "Type": "ControlInfo"
     },
-    "Latitude (szerokość geograficzna)2": {
+    "Latitude (szerokość geograficzna)1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "FieldName",
@@ -2916,7 +2916,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Latitude (szerokość geograficzna)2",
+      "Name": "Latitude (szerokość geograficzna)1",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3108,7 +3108,7 @@
       "StyleName": "defaultTypedDataCardStyle",
       "Type": "ControlInfo"
     },
-    "Lokalizacja3": {
+    "Lokalizacja2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "FieldName",
@@ -3131,7 +3131,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Lokalizacja3",
+      "Name": "Lokalizacja2",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3398,7 +3398,7 @@
       "StyleName": "defaultTypedDataCardStyle",
       "Type": "ControlInfo"
     },
-    "Longitude (wysokość geograficzna)2": {
+    "Longitude (wysokość geograficzna)1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "FieldName",
@@ -3421,7 +3421,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Longitude (wysokość geograficzna)2",
+      "Name": "Longitude (wysokość geograficzna)1",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3504,7 +3504,14 @@
         "Height",
         "DisplayMode",
         "ZIndex",
-        "Items",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Items",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -3553,14 +3560,7 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "false",
-          "InvariantPropertyName": "DefaultLocation",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "DefaultLocation",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -3574,6 +3574,14 @@
           "AutoRuleBindingEnabled": false,
           "AutoRuleBindingString": "-122.126801",
           "InvariantPropertyName": "DefaultLongitude",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\"\"",
+          "InvariantPropertyName": "ItemsLabels",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         }
@@ -3647,6 +3655,11 @@
         {
           "Category": "Data",
           "PropertyName": "DefaultLongitude",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "ItemsLabels",
           "RuleProviderType": "Unknown"
         },
         {
@@ -3822,7 +3835,7 @@
       "StyleName": "defaultTypedDataCardStyle",
       "Type": "ControlInfo"
     },
-    "Powierzchnia2": {
+    "Powierzchnia1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "FieldName",
@@ -3845,7 +3858,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Powierzchnia2",
+      "Name": "Powierzchnia1",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4002,7 +4015,7 @@
       "StyleName": "invertedBackgroundRectangleStyle",
       "Type": "ControlInfo"
     },
-    "Załączniki3": {
+    "Załączniki2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "FieldName",
@@ -4025,7 +4038,7 @@
       "IsLocked": true,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Załączniki3",
+      "Name": "Załączniki2",
       "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [

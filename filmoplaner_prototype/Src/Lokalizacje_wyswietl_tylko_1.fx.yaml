@@ -1,12 +1,12 @@
-"Lokalizacje_wyswietl_tylko As screen.'phoneLayout_HeaderAndGallery_ver3.0'":
+"Lokalizacje_wyswietl_tylko_1 As screen.'phoneLayout_HeaderAndGallery_ver3.0'":
     Fill: =RGBA(204, 231, 246, 1)
 
-    RectQuickActionBar5_60 As rectangle:
+    RectQuickActionBar5_74 As rectangle:
         Height: =106
         Width: =Parent.Width
         ZIndex: =1
 
-    "BrowseGallery1_23 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
+    "BrowseGallery1_28 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
         Height: =489
         Items: =If(SortDescending1,Sort(Lokalizacja,Lokalizacja,Descending),(If(!SortDescending1,Sort(Lokalizacja,Lokalizacja,Ascending))))
         Layout: =Layout.Vertical
@@ -14,10 +14,10 @@
         TemplatePadding: =0
         TemplateSize: =Min(96, Self.Height - 60)
         Width: =Parent.Width
-        Y: =TextSearchBox1_23.Y + TextSearchBox1_23.Height
+        Y: =TextSearchBox1_28.Y + TextSearchBox1_28.Height
         ZIndex: =2
 
-        Title6_21 As label:
+        Title6_26 As label:
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -31,7 +31,7 @@
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =1
 
-        NextArrow6_12 As icon.ChevronRight:
+        NextArrow6_17 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
             Height: =60
             Icon: =Icon.ChevronRight
@@ -47,14 +47,14 @@
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =2
 
-        Separator7_21 As rectangle:
+        Separator7_26 As rectangle:
             Height: =1
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
             Y: =Parent.TemplateHeight - 1
             ZIndex: =3
 
-    LblAppName2_23 As label:
+    LblAppName2_28 As label:
         Align: =Align.Center
         FontWeight: =FontWeight.Semibold
         Height: =106
@@ -64,8 +64,8 @@
         Wrap: =false
         ZIndex: =4
 
-    IconRefresh1_23 As icon.Reload:
-        AccessibleLabel: =IconRefresh1_23.Tooltip
+    IconRefresh1_28 As icon.Reload:
+        AccessibleLabel: =IconRefresh1_28.Tooltip
         Height: =88
         Icon: =Icon.Reload
         PaddingBottom: =22
@@ -79,8 +79,8 @@
         Y: =9
         ZIndex: =5
 
-    IconSortUpDown1_23 As icon.ArrowsUpDown:
-        AccessibleLabel: =IconSortUpDown1_23.Tooltip
+    IconSortUpDown1_28 As icon.ArrowsUpDown:
+        AccessibleLabel: =IconSortUpDown1_28.Tooltip
         Height: =88
         Icon: =Icon.Sort
         OnSelect: |-
@@ -96,7 +96,7 @@
         Y: =9
         ZIndex: =6
 
-    TextSearchBox1_23 As text:
+    TextSearchBox1_28 As text:
         Align: =Left
         Default: =""
         Height: =68
@@ -111,26 +111,26 @@
         Y: =106
         ZIndex: =7
 
-    SearchIcon1_23 As icon.Search:
-        Height: =SearchIcon1_23.Width
+    SearchIcon1_28 As icon.Search:
+        Height: =SearchIcon1_28.Width
         Icon: =Icon.Search
         PaddingBottom: =14
         PaddingLeft: =14
         PaddingRight: =14
         PaddingTop: =14
         Tooltip: ="Wyszukaj"
-        Width: =TextSearchBox1_23.Height
-        X: =TextSearchBox1_23.X
-        Y: =TextSearchBox1_23.Y
+        Width: =TextSearchBox1_28.Height
+        X: =TextSearchBox1_28.X
+        Y: =TextSearchBox1_28.Y
         ZIndex: =8
 
-    Rectangle12_23 As rectangle:
+    Rectangle12_28 As rectangle:
         Height: =2
         Width: =Parent.Width
-        Y: =TextSearchBox1_23.Y + TextSearchBox1_23.Height
+        Y: =TextSearchBox1_28.Y + TextSearchBox1_28.Height
         ZIndex: =9
 
-    Icon1_55 As icon.Undo:
+    Icon1_69 As icon.Undo:
         Height: =71
         Icon: =Icon.Undo
         OnSelect: =Back()
@@ -139,7 +139,7 @@
         Y: =17
         ZIndex: =10
 
-    "Map1_1 As 'Mapa (wersja zapoznawcza)'.pcfdataset":
+    "Map1_2 As 'Mapa (wersja zapoznawcza)'.pcfdataset":
         BorderColor: =RGBA(0, 18, 107, 1)
         DisplayMode: =DisplayMode.Edit
         Height: =472
@@ -150,13 +150,13 @@
         ItemsLongitudes: ="Longitude"
         PinColor: =RGBA(29, 114, 169, 1)
         Pitch: =false
-        SatelliteView: =Toggle_satelite_1.Value
+        SatelliteView: =Toggle_satelite_2.Value
         Width: =640
         X: =0
         Y: =663
         ZIndex: =11
 
-        Lokalizacja1_1 As pcfDataField.textualColumn:
+        Lokalizacja1_2 As pcfDataField.textualColumn:
             FieldDisplayName: ="Lokalizacja"
             FieldName: ="Title"
             FieldType: ="s"
@@ -164,7 +164,7 @@
             Order: =1
             ZIndex: =5
 
-        Latitiude1_1 As pcfDataField.textualColumn:
+        Latitiude1_2 As pcfDataField.textualColumn:
             FieldDisplayName: ="Latitiude"
             FieldName: ="Latitiude"
             FieldType: ="s"
@@ -172,7 +172,7 @@
             Order: =2
             ZIndex: =6
 
-        Longitude1_1 As pcfDataField.textualColumn:
+        Longitude1_2 As pcfDataField.textualColumn:
             FieldDisplayName: ="Longitude"
             FieldName: ="Longitude"
             FieldType: ="s"
@@ -180,7 +180,7 @@
             Order: =3
             ZIndex: =7
 
-        Załączniki1_1 As pcfDataField.textualColumn:
+        Załączniki1_2 As pcfDataField.textualColumn:
             FieldDisplayName: ="Załączniki"
             FieldName: ="{Attachments}"
             FieldType: ="r*"
@@ -188,7 +188,7 @@
             Order: =4
             ZIndex: =8
 
-    Toggle_satelite_1 As toggleSwitch:
+    Toggle_satelite_2 As toggleSwitch:
         FalseText: ="Mapa"    
         Height: =49
         Size: =21
