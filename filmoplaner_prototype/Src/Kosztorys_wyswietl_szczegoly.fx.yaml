@@ -198,10 +198,10 @@ Kosztorys_wyswietl_szczegoly As screen:
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Height: =70
-                Items: =Choices([@Kosztorys].Film)
+                Items: =Choices([@Kosztorys].'Nazwa filmu')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices(Kosztorys.Film,DataCardValue121.SearchText)
+                SearchItems: =Choices(Kosztorys.'Nazwa filmu',DataCardValue121.SearchText)
                 SelectMultiple: =false
                 Size: =21
                 Width: =Parent.Width - 60
