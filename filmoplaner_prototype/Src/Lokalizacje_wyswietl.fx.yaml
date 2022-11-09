@@ -35,7 +35,7 @@
             AccessibleLabel: =Self.Tooltip
             Height: =60
             Icon: =Icon.ChevronRight
-            OnSelect: = Navigate(Lokalizacje_wyswietl_szczegoly)
+            OnSelect: = ClearCollect(kolekcja ,BrowseGallery1_5.Selected);Navigate(Lokalizacje_wyswietl_szczegoly)
             PaddingBottom: =10
             PaddingLeft: =10
             PaddingRight: =10

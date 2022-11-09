@@ -8,7 +8,7 @@ Lokalizacje_wyswietl_szczegoly As screen:
 
     FormViewer2_5 As formViewer:
         DataSource: =Lokalizacja
-        Height: =1029
+        Height: =426
         Item: =BrowseGallery1_5.Selected
         Width: =640
         Y: =106
@@ -185,4 +185,18 @@ Lokalizacje_wyswietl_szczegoly As screen:
             ="Lokalizacja:"
         Width: =560
         ZIndex: =4
+
+    "Map4 As 'Mapa (wersja zapoznawcza)'.pcfdataset":
+        BorderColor: =RGBA(0, 18, 107, 1)
+        DisplayMode: =DisplayMode.Edit
+        Height: =570
+        Items: =kolekcja
+        ItemsLabels: ="Title"
+        ItemsLatitudes: ="Latitiude"
+        ItemsLongitudes: ="Longitude"
+        PinColor: =RGBA(29, 114, 169, 1)
+        Width: =640
+        X: =0
+        Y: =566
+        ZIndex: =5
 
