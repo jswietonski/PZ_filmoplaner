@@ -374,10 +374,10 @@
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Height: =70
-                Items: =Choices([@Kosztorys].Film)
+                Items: =Choices([@Kosztorys].'Nazwa filmu')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices(Kosztorys.Film,DataCardValue144.SearchText)
+                SearchItems: =Choices(Kosztorys.'Nazwa filmu',DataCardValue144.SearchText)
                 SelectMultiple: =false
                 Size: =21
                 Tooltip: =Parent.DisplayName
